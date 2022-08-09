@@ -49,6 +49,9 @@ img {
   height: 100%;
   width: 100%;
 }
+header{
+  height: calc(100vh - 80px);
+}
 
 /*
 
@@ -67,15 +70,83 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1850px;
   padding: 0 24px;
   width: 100%;
 }
 .logo {
   width: 160px;
 }
+.nav__list{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  
+}
+.nav__link{
+  color: #171a20;
+  font-size: 14px;
+  font-weight: 500;
+}
 /*
 
 LANDINGPAGE
 
 */
+
+
+/*
+CAROUSEL
+*/
+
+
+.item {
+ width: 100vw;
+ height: 100%;
+}
+
+.pic--one {
+  background-image: url(https://cdn.wallpapersafari.com/97/50/eRwDMy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.pic--two{
+  background-image: url(https://cdn.wallpapersafari.com/97/50/eRwDMy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.alice-carousel__wrapper {
+  height: calc(100vh - 80px) !important;
+  width: 100vw !important;
+}
+.alice-carousel {
+  height: calc(100vh - 80px) !important;
+  width: 100vw !important;
+}
+.alice-carousel__dots {
+  position: relative;
+  top: -100px;
+  left: 50%;
+}
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  display: none !important;
+}
+.alice-carousel__dots-item {
+  width: 8px !important;
+  height: 8px !important;
+  transition: all 300ms ease;
+}
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active{
+  background-color: rgb(255, 255, 255) !important;
+}
+.alice-carousel__dots-item:not(.__custom){
+  background-color: rgba(255, 255, 255, 0.205) !important;
+  
+
+}
