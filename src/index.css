@@ -50,7 +50,7 @@ img {
   width: 100%;
 }
 header {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 80px);
 }
 
 /*
@@ -145,11 +145,11 @@ CAROUSEL
 }
 
 .alice-carousel__wrapper {
-  height: calc(100vh - 120px) !important;
+  height: calc(100vh - 80px) !important;
   width: 100vw !important;
 }
 .alice-carousel {
-  height: calc(100vh - 120px) !important;
+  height: calc(100vh - 80px) !important;
   width: 100vw !important;
 }
 .alice-carousel__dots {
@@ -174,48 +174,9 @@ CAROUSEL
   background-color: rgba(255, 255, 255, 0.205) !important;
 }
 
-nav .alice-carousel,
-nav .alice-carousel__wrapper {
-  height: 40px !important;
-  width: 400px !important;
-}
 
-nav .alice-carousel__dots {
-  display: none;
-}
-nav .alice-carousel__next-btn,
-nav .alice-carousel__prev-btn {
-  display: inline-block !important;
-  position: relative;
-  top: -45px;
-}
 
-nav .alice-carousel__stage {
-  left: 300px;
-}
-nav .alice-carousel__next-btn {
-  left: 200px;
-}
-nav .alice-carousel__prev-btn {
-  right: 200px;
-}
 
-nav .nav-gallery {
-  display: flex;
-  align-items: center;
-}
-nav .item {
-  width: 400px;
-  justify-content: center;
-  left: 100px;
-  position: relative;
-}
-
-.nav-gallery__para {
-  font-size: 12px;
-  color: #171a20;
-  font-weight: 400;
-}
 
 .item__content {
   width: 50%;
@@ -238,13 +199,13 @@ nav .item {
   transition: all 300ms ease;
 }
 .item__button:hover,
-.item__button:hover .button__para{
+.item__button:hover .button__para {
   cursor: pointer;
   color: gray;
   border-color: gray;
 }
 .item__button:active,
-.item__button:active .button__para{
+.item__button:active .button__para {
   color: white;
   border-color: white;
 }
@@ -258,11 +219,11 @@ nav .item {
 .item__title {
   font-size: 40px;
   color: white;
-  
+
   position: relative;
   z-index: 2;
 }
-.item__para{
+.item__para {
   margin-bottom: 30px;
   color: white;
   position: relative;

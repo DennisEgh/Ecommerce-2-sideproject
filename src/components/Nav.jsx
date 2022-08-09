@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import NavGallery from "./ui/NavGallery";
+
 
 const Nav = () => {
   return (
@@ -30,9 +30,7 @@ const Nav = () => {
             </li>
         </ul>
       </div>
-      <div className="nav__container--lower">
-        <NavGallery></NavGallery>
-      </div>
+      
     </nav>
   );
 };
