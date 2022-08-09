@@ -155,16 +155,14 @@ nav {
   border-radius: 50%;
   position: absolute;
   background-color: red;
-  right: 150px;
+ margin-left: 10px;
   top: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
-.cart__para {
-  color: rgb(233, 233, 233);
-  position: relative;
-}
+
 /*
 
 LANDINGPAGE

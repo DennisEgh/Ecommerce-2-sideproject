@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import cart from "../assets/cart.webp";
 
-const Nav = () => {
+const Nav = ({ numberOfItems }) => {
   return (
     <nav>
       <div className="nav__container">
@@ -38,10 +38,10 @@ const Nav = () => {
           <li className="nav__list">
             <Link className="nav__link" to="/">
               <img className="cart__logo" src={cart} alt="" />
-              <div className="cart__length">
-                <div className="cart__para">1</div>
-              </div>
-              
+
+              {numberOfItems() > 0 && (
+                <div className="cart__length">{numberOfItems()}</div>
+              )}
             </Link>
           </li>
           <li className="nav__list">
