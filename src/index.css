@@ -73,25 +73,32 @@ nav {
   max-width: 1850px;
   padding: 0 24px;
   width: 100%;
-  border-bottom: lightgray 1px solid;
+  
   height: 50px;
 }
 .logo {
   width: 160px;
 }
 .nav__list {
-  align-items: center;
+  
   display: flex;
   justify-content: center;
+
+  
 }
 .nav__link {
   color: #171a20;
   font-size: 14px;
   font-weight: 700;
 
+  
+  
+
 }
 .nav__links {
   gap: 40px;
+  cursor: pointer;
+ 
 }
 
 .nav__link--middle::after {
@@ -101,12 +108,12 @@ nav {
   transform: scaleX(0);
   transition: transform 250ms ease;
   position: relative;
-  top: 15px;
+  top: 8px;
 }
 .nav__list:hover .nav__link:after {
   transform: scaleX(1);
   position: relative;
-  top: 15px;
+  top: 8px;
 }
 .nav__list--menu{
   width: 100vw;
@@ -115,7 +122,7 @@ nav {
   top: 50px;
   left: 0;
   height: 500px;
-  background-color: white;
+  background-color: #f8f8f8;
   opacity: 0;
   visibility: hidden;
   transition: all 250ms ease;
@@ -123,7 +130,24 @@ nav {
 .nav__list--women:hover .nav__list--menu{
 opacity: 1;
 visibility: visible;
-z-index: 3;
+z-index: 2;
+}
+.nav__list--shoes:hover .nav__list--menu{
+  opacity: 1;
+visibility: visible;
+z-index: 2;
+
+}
+.nav__list--accessories:hover .nav__list--menu{
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.nav__link--middle{
+  height: 30px;
+  position: relative;
+  top: 10px;
 }
 
 /*
