@@ -1,5 +1,5 @@
 import React from "react";
-import Gallery from "./Gallery";
+import Gallery from "./ui/Gallery";
 import "../index.css";
 
 

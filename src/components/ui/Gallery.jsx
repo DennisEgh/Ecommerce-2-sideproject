@@ -4,7 +4,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 const items = [
   <div className="item pic--one" data-value="1">
-    <h1>hello</h1>
+
   </div>,
 
   <div className="item pic--two" data-value="2"></div>,
@@ -18,7 +18,7 @@ const Gallery = () => {
       autoPlay
       autoPlayInterval={3000}
       infinite
-      animationDuration={1500}
+      animationDuration={1000}
     />
   );
 };
