@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import {ads} from "./data";
+import Shop from "./pages/Shop";
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Home ads={ads}/>} />
+          <Route path="/shop" element={<Shop />}/>
         </Routes>
       </div>
     </Router>

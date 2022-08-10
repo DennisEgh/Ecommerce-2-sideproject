@@ -32,6 +32,50 @@ const Landing = ({ ads }) => {
               
           </div>
         </div>
+        <div className="header__container">
+          <div className="header__description">
+            <div className="description__container">
+              <p className="header__para">WOMENS</p>
+              <h1 className="header__title">POPULAR</h1>
+            </div>
+            <Link to="/" className="header__link">
+              View All
+            </Link>
+          </div>
+          <div className="cards">
+           
+
+            {ads
+            .filter(ads => ads.popular === true)
+            .slice(0, 4)
+            .map((ads) => (
+              <Landingcard ads={ads} key={ads.id} />
+              ))}
+              
+          </div>
+        </div>
+        <div className="header__container">
+          <div className="header__description">
+            <div className="description__container">
+              <p className="header__para">ACCESSORIES</p>
+              <h1 className="header__title">POPULAR</h1>
+            </div>
+            <Link to="/" className="header__link">
+              View All
+            </Link>
+          </div>
+          <div className="cards">
+           
+
+            {ads
+            .filter(ads => ads.popular === true && ads.category === "accessories")
+            .slice(0, 4)
+            .map((ads) => (
+              <Landingcard ads={ads} key={ads.id} />
+              ))}
+              
+          </div>
+        </div>
       </header>
     </section>
   );
