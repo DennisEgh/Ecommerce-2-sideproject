@@ -16,8 +16,8 @@ const Landingcard = ({ ads }) => {
               originalPrice={ads.originalPrice}
               />
           </div>
-          <p className="description__para--mid">Leggings</p>
-          <p className="description__para--bot">Green Melange</p>
+          <p className="description__para--mid">{ads.maker}</p>
+          <p className="description__para--bot">{ads.title}</p>
         </div>
               </Link>
       </div>

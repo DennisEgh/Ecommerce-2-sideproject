@@ -391,7 +391,7 @@ gap: 40px;
   width: 370px;
 transition: all 300ms ease;
   margin-bottom: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 .card:hover{
   transform: translateY(-5px);
@@ -420,10 +420,9 @@ transition: all 300ms ease;
 }
 
 @media (max-width: 880px) {
-.card:first-of-type{
-display: none;
-}
-.card:nth-of-type(2){
+
+.card:nth-of-type(1),
+.card:nth-of-type(4){
   display: none;
 }
 
