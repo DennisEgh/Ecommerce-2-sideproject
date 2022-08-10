@@ -451,4 +451,7 @@ transition: all 300ms ease;
   .item__content{
     margin-left: 25px;
   }
+  .cart{
+    display: block !important;
+  }
 }

@@ -35,7 +35,7 @@ const Nav = () => {
           </li>
         </ul>
         <ul className="nav__links nav__links--end">
-          <li className="nav__list">
+          <li className="nav__list cart">
             <Link className="nav__link" to="/">
               <img className="cart__logo" src={cart} alt="" />
 
