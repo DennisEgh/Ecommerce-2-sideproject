@@ -4,10 +4,13 @@ import "../index.css";
 
 
 const Landing = () => {
+  
+
   return (
     <section id="landing">
       <header>
-       <Gallery></Gallery>
+        <Gallery></Gallery>
+     
       </header>
     </section>
   );
