@@ -37,6 +37,7 @@ export const ads = [
     originalPrice: 49.99,
     salePrice: null,
     new: true,
+    buy_link: "https://www.shein.se/Seamless-Softness-Tie-Dye-Sports-Leggings-p-3118304-cat-2190.html?lang=sesv&url_from=seadplasw2108188136291087M_GPM&cid=17551476127&setid=&adid=&pf=GOOGLE&gclid=Cj0KCQjwrs2XBhDjARIsAHVymmSjCnW3l8n5cge4XWby6qHlrC95Y0En08LVrx4i-mWBkN4LGNzJGXEaAsneEALw_wcB&main_attr=27_1000120&mallCode=1",
     
 
   },
