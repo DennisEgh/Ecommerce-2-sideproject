@@ -155,7 +155,7 @@ nav {
   border-radius: 50%;
   position: absolute;
   background-color: red;
- margin-left: 10px;
+  margin-left: 10px;
   top: 24px;
   display: flex;
   justify-content: center;
@@ -289,4 +289,126 @@ CAROUSEL
   color: white;
   position: relative;
   z-index: 1;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 1700px;
+
+  margin: 0 auto;
+  padding: 0 60px;
+  padding-bottom: 20px;
+}
+.header__description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 30px;
+
+  width: 100%;
+}
+.header__title {
+  font-size: 25px;
+}
+.header__para {
+  font-size: 14px;
+  font-weight: 500;
+}
+.header__link {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 27px;
+  
+}
+
+/*
+CARD
+*/
+.cards {
+  grid-template-columns: repeat(4, 1fr);
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  display: grid;
+}
+
+.card__description--top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 365px;
+
+  margin-bottom: 0.2rem;
+  border-left: 0.3rem solid #000000;
+}
+.description__para--top {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0 0.5rem;
+}
+.price--normal {
+  font-size: 16px;
+  font-weight: bold;
+}
+.description__para--mid {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.description__para--bot {
+  font-size: 14px;
+  color: #6e6e6e;
+}
+.card__img {
+  margin-bottom: 5px;
+  height: 470px;
+  width: 370px;
+}
+.card {
+  width: 370px;
+}
+.card__container {
+  width: 370px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1685px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header__container {
+    max-width: 1382px;
+  }
+
+}
+
+
+@media (max-width: 1270px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header__container {
+    max-width: 880px;
+  }
+  
+}
+
+
+
+@media (max-width: 880px) {
+  .card__container:first-of-type {
+    display: none;
+  }
+  .card__container:last-of-type {
+    display: none;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header__container {
+    max-width: 370px;
+    padding: 0;
+  }
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import Landing from "../components/Landing";
 
-const Home = () => {
+const Home = ({ads}) => {
   return (
     <>
-      <Landing />
+      <Landing  ads={ads}/>
     </>
   );
 };
