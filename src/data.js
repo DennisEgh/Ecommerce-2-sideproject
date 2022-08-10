@@ -6,6 +6,7 @@ export const ads = [
     url: "https://cdn.shopify.com/s/files/1/0381/9696/9603/products/gavelogreenmelangeswirl12_800x.jpg?v=1641817676",
     originalPrice: 79.99,
     salePrice: null,
+    popular: false,
     new: true,
     buy_link:
       "https://www.gavelo.com/products/green-melange-swirl-tights?variant=39527307608195",
@@ -19,6 +20,7 @@ export const ads = [
     url: "https://cdn.def-shop.com/cdn-cgi/image/w=530,q=95,f=auto/pic1300x1725/urban-classics-cargo-pants-roed-799506__1.jpg",
     originalPrice: 59.99,
     salePrice: null,
+    popular: false,
     new: true,
     buy_link:
       "https://www.def-shop.se/urban-classics-ladies-high-waist-cargo-pants-cherry.html",
@@ -32,6 +34,7 @@ export const ads = [
     url: "https://cdn.shopify.com/s/files/1/0381/9696/9603/products/gaveloblack_whiteswirl19_800x.jpg?v=1638173726",
     originalPrice: 75.99,
     salePrice: null,
+    popular: false,
     new: true,
     buy_link: "https://www.gavelo.com/products/gavelo-black-white-swirl-tights",
     category: "clothes",
@@ -45,6 +48,7 @@ export const ads = [
     originalPrice: 49.99,
     salePrice: null,
     new: true,
+    popular: false,
     buy_link:
       "https://www.shein.se/Seamless-Softness-Tie-Dye-Sports-Leggings-p-3118304-cat-2190.html?lang=sesv&url_from=seadplasw2108188136291087M_GPM&cid=17551476127&setid=&adid=&pf=GOOGLE&gclid=Cj0KCQjwrs2XBhDjARIsAHVymmSjCnW3l8n5cge4XWby6qHlrC95Y0En08LVrx4i-mWBkN4LGNzJGXEaAsneEALw_wcB&main_attr=27_1000120&mallCode=1",
     category: "clothes",
@@ -118,6 +122,7 @@ export const ads = [
     buy_link:
       "https://www.dekalgruvan.se/bilvard/kopia-mini-doftspridare-och-luftfuktare",
     category: "accessories",
+    specific: "humidifier"
   },
   {
     id: 10,
@@ -131,6 +136,7 @@ export const ads = [
     buy_link:
       "https://h2o-humidifiers.com/collections/humidifiers/products/alpine-ultrasonic-air-humidifier",
     category: "accessories",
+    specific: "humidifier"
   },
   {
     id: 11,
@@ -144,6 +150,7 @@ export const ads = [
     buy_link:
       "https://h2o-humidifiers.com/collections/dual-spray/products/ridge-wireless-dual-spray-ultrasonic-air-humidifier",
     category: "accessories",
+    specific: "humidifier"
   },
   {
     id: 12,
@@ -157,5 +164,20 @@ export const ads = [
     buy_link:
       "https://h2o-humidifiers.com/products/replacement-cotton-filters-10pc",
     category: "accessories",
+    specific: "humidifier"
+  },
+  {
+    id: 13,
+    maker: "GYMSHARK",
+    title: "VITAL SEAMLESS 2.0 LEGGINGS",
+    url: "https://cdn.shopify.com/s/files/1/0098/8822/products/VITALSEAMLESSLEGGINGSBLACK27.A_ZH_ZH_7dbf9c1a-c695-479e-b67f-3e822329d155_885x.jpg?v=1658999618",
+    originalPrice: 60.00,
+    salePrice: null,
+    new: false,
+    popular: true,
+    buy_link:
+      "https://uk.gymshark.com/products/gymshark-vital-seamless-leggings-black-marl-logo?gclid=Cj0KCQjwrs2XBhDjARIsAHVymmSyFCFgQoS3H0maZgqYuLvMQwvtWJ-HSoZ1k32pCe3sx8pNJu5TbD8aAnhwEALw_wcB",
+    category: "clothes",
+    specific: "leggings"
   },
 ];

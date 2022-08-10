@@ -19,9 +19,7 @@ console.log(ad)
               <p className="header__para">WOMENS</p>
               <h1 className="header__title">NEW RELEASES</h1>
             </div>
-            <Link to="/" className="header__link">
-              View All
-            </Link>
+          
           </div>
           <div className="cards">
            
@@ -41,9 +39,7 @@ console.log(ad)
               <p className="header__para">WOMENS</p>
               <h1 className="header__title">POPULAR</h1>
             </div>
-            <Link to="/" className="header__link">
-              View All
-            </Link>
+           
           </div>
           <div className="cards">
            
@@ -63,9 +59,7 @@ console.log(ad)
               <p className="header__para">ACCESSORIES</p>
               <h1 className="header__title">POPULAR</h1>
             </div>
-            <Link to="/" className="header__link">
-              View All
-            </Link>
+            
           </div>
           <div className="cards">
            

@@ -344,9 +344,7 @@ CARD
   display: grid;
 }
 
-.card__description {
-  padding: 20px;
-}
+
 .card__description--top {
   display: flex;
   justify-content: space-between;
@@ -395,7 +393,7 @@ CARD
   width: 370px;
   transition: all 300ms ease;
   margin-bottom: 20px;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
 }
 .card:hover {
   transform: translateY(-5px);
