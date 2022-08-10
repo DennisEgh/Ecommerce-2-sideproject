@@ -1,7 +1,7 @@
 import React from "react";
 import Gallery from "./ui/Gallery";
 import "../index.css";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Landingcard from "./ui/Landingcard";
 
 
