@@ -114,33 +114,6 @@ nav {
   position: relative;
   top: 8px;
 }
-.nav__list--menu {
-  width: 100vw;
-  position: absolute;
-  z-index: -1;
-  top: 50px;
-  left: 0;
-  height: 500px;
-  background-color: #f8f8f8;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 250ms ease;
-}
-.nav__list--women:hover .nav__list--menu {
-  opacity: 1;
-  visibility: visible;
-  z-index: 2;
-}
-.nav__list--shoes:hover .nav__list--menu {
-  opacity: 1;
-  visibility: visible;
-  z-index: 2;
-}
-.nav__list--accessories:hover .nav__list--menu {
-  opacity: 1;
-  visibility: visible;
-  z-index: 2;
-}
 
 .nav__link--middle {
   height: 30px;
@@ -343,7 +316,9 @@ CARD
 
   display: grid;
 }
-
+.card {
+  position: relative;
+}
 
 .card__description--top {
   display: flex;
@@ -393,7 +368,6 @@ CARD
   width: 370px;
   transition: all 300ms ease;
   margin-bottom: 20px;
-
 }
 .card:hover {
   transform: translateY(-5px);
@@ -491,6 +465,18 @@ SHOP
   gap: 20px;
 }
 
+/*
+SKELETON
+*/
+.skeleton {
+  height: 550px;
+  width: 370px;
+  background-color: gray;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+}
+
 @media (max-width: 1685px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
@@ -568,12 +554,12 @@ SHOP
     height: 200px;
   }
 }
-@media (max-width: 699px){
-  .shop__content--upper{
+@media (max-width: 699px) {
+  .shop__content--upper {
     padding-left: 40px;
   }
 }
-@media (max-width: 430px){
+@media (max-width: 430px) {
   #shop .card {
     width: 150px;
   }
