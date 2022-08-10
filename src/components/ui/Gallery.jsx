@@ -28,6 +28,7 @@ const Gallery = () => {
     <AliceCarousel
       mouseTracking={false}
       items={items}
+      autoPlay
       autoPlayInterval={3000}
       infinite
       animationDuration={1000}

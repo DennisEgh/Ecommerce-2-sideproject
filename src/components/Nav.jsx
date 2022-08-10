@@ -39,15 +39,19 @@ const Nav = () => {
             <Link className="nav__link" to="/">
               <img className="cart__logo" src={cart} alt="" />
 
-             
-                <div className="cart__length"></div>
-             
+              <div className="cart__length"></div>
             </Link>
           </li>
           <li className="nav__list">
             <Link className="nav__link" to="/">
               ACCOUNT
             </Link>
+          </li>
+          <li className="nav__list burger__menu">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/32px-Hamburger_icon.svg.png?20160819113547"
+              alt=""
+            />
           </li>
         </ul>
       </div>
