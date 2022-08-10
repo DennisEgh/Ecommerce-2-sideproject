@@ -294,7 +294,7 @@ CAROUSEL
 .header__container {
   width: 100%;
   max-width: 1700px;
-height: 130vh;
+
   margin: 0 auto;
   padding: 0 60px;
   padding-bottom: 20px;
@@ -424,6 +424,9 @@ transition: all 300ms ease;
 display: none;
 }
 .card:last-of-type{
+  display: none;
+}
+.card:nth-of-type(3){
   display: none;
 }
   
