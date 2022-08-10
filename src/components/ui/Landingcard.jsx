@@ -6,7 +6,7 @@ const Landingcard = ({ ads }) => {
   return (
       
       <div className="card">
-          <Link className="card__link" to="">
+          <Link className="card__link" to={`/shop/${ads.id}`}>
         <img className="card__img" src={ads.url} alt="" />
         <div className="card__description">
           <div className="card__description--top">

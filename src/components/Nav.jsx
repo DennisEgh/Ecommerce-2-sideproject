@@ -15,7 +15,7 @@ const Nav = () => {
             <div className="nav__list--menu">
               <h1>eeee</h1>
             </div>
-            <Link className="nav__link nav__link--middle" to="/">
+            <Link className="nav__link nav__link--middle" to="/shop">
               WOMENS
             </Link>
           </li>
@@ -24,7 +24,7 @@ const Nav = () => {
               <h1>oooo</h1>
             </div>
             <Link className="nav__link nav__link--middle" to="/">
-              SHOES
+              FRAGRANCES
             </Link>
           </li>
           <li className="nav__list nav__list--accessories">

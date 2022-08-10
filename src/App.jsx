@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import {ads} from "./data";
 import Shop from "./pages/Shop";
+import ShopSpecific from "./pages/ShopSpecific";
 
 function App() {
   
@@ -18,6 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home ads={ads}/>} />
           <Route path="/shop" element={<Shop />}/>
+          <Route path="/shop/:id" element={<ShopSpecific />}/>
+         
         </Routes>
       </div>
     </Router>
