@@ -9,7 +9,7 @@ const Shopshorts = ({ads}) => {
           <div className="shop__content--upper">
             <div>
               <p className="shop--upper__para">WOMENS</p>
-              <h1 className="shop--upper__title">WOMEN'S ESSENTIALS</h1>
+              <h1 className="shop--upper__title">SHORTS</h1>
             </div>
           </div>
           <div className="shop__filters">

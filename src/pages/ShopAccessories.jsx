@@ -8,8 +8,8 @@ const Shopaccessories = ({ ads }) => {
         <div className="header__container">
           <div className="shop__content--upper">
             <div>
-              <p className="shop--upper__para">WOMENS</p>
-              <h1 className="shop--upper__title">WOMEN'S ESSENTIALS</h1>
+              <p className="shop--upper__para">ACCESSORIES</p>
+              <h1 className="shop--upper__title">All</h1>
             </div>
           </div>
           <div className="shop__filters">
