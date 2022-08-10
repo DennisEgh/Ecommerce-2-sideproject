@@ -294,7 +294,7 @@ CAROUSEL
 .header__container {
   width: 100%;
   max-width: 1700px;
-
+height: 130vh;
   margin: 0 auto;
   padding: 0 60px;
   padding-bottom: 20px;
