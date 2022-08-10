@@ -22,7 +22,7 @@ export const ads = [
   {
     id: 3,
     maker: "GAVELO",
-    title: "Green Black & White Swirtl Leggings",
+    title: "Green Black & White Swirly Leggings",
     url: "https://cdn.shopify.com/s/files/1/0381/9696/9603/products/gaveloblack_whiteswirl19_800x.jpg?v=1638173726",
     originalPrice: 75.99,
     salePrice: null,
