@@ -7,6 +7,7 @@ export const ads = [
     originalPrice: 79.99,
     salePrice: null,
     new: true,
+    buy_link: "https://www.gavelo.com/products/green-melange-swirl-tights?variant=39527307608195",
   },
   {
     id: 2,

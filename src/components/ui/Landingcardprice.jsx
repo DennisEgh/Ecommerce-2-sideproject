@@ -3,16 +3,20 @@ import React from "react";
 const Landingcardprice = ({ originalPrice, salePrice }) => {
   return (
     <>
-      {salePrice ? (
-        <>
-          (<span className="price--normal">{originalPrice.toFixed(2)}</span>
-          {salePrice.toFixed(2)})
-        </>
-      ) : (
-        <>
-          <span className="price--normal">${originalPrice.toFixed(2)}</span>
-        </>
-      )}
+      <div className="price">
+        {salePrice ? (
+          <>
+            <div>
+              <span className="price--sale">${originalPrice.toFixed(2)}</span>$
+              {salePrice.toFixed(2)}
+            </div>
+          </>
+        ) : (
+          <>
+            <span className="price--normal">${originalPrice.toFixed(2)}</span>
+          </>
+        )}
+      </div>
     </>
   );
 };

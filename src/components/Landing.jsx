@@ -21,12 +21,15 @@ const Landing = ({ ads }) => {
             </Link>
           </div>
           <div className="cards">
+           
+
             {ads
             .filter(ads => ads.new === true)
             .slice(0, 4)
             .map((ads) => (
               <Landingcard ads={ads} key={ads.id} />
-            ))}
+              ))}
+              
           </div>
         </div>
       </header>

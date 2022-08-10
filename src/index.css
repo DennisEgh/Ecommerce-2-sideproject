@@ -320,7 +320,6 @@ CAROUSEL
   text-decoration: underline;
   font-weight: bold;
   margin-top: 27px;
-  
 }
 
 /*
@@ -348,18 +347,34 @@ CARD
   font-size: 11px;
   font-weight: 700;
   padding: 0 0.5rem;
+  cursor: pointer;
 }
 .price--normal {
   font-size: 16px;
-  font-weight: bold;
+
+  
+}
+.price--sale{
+  text-decoration: line-through;
+  padding-right: 6px;
+  color: #bfbfbf;
+}
+.price {
+  font-size: 16px;
+}
+.card__link{
+  color: #000000;
+  
 }
 .description__para--mid {
   font-size: 16px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 .description__para--bot {
   font-size: 14px;
   color: #6e6e6e;
+  cursor: pointer;
 }
 .card__img {
   margin-bottom: 5px;
@@ -381,9 +396,7 @@ CARD
   .header__container {
     max-width: 1382px;
   }
-
 }
-
 
 @media (max-width: 1270px) {
   .cards {
@@ -392,10 +405,7 @@ CARD
   .header__container {
     max-width: 880px;
   }
-  
 }
-
-
 
 @media (max-width: 880px) {
   .card__container:first-of-type {
