@@ -54,7 +54,9 @@ img {
 header {
   height: calc(100vh - 50px);
 }
-
+.inactive {
+  display: none;
+}
 /*
 
 NAV
@@ -414,36 +416,82 @@ SHOP
   display: flex;
   align-items: center;
 }
-#shop .header__container{
+#shop .header__container {
   max-width: 100vw;
   padding: 0;
 }
-.shop--upper__title{
+.shop--upper__title {
   font-size: 35px;
   color: #000000;
-  
 }
-.shop--upper__para{
+.shop--upper__para {
   font-size: 14px;
   color: #000000;
   margin-bottom: 5px;
   font-weight: 700;
 }
-.shop__filters{
+.shop__filters {
   height: 58px;
   padding: 7px 40px 0;
   display: flex;
   align-items: center;
- 
 }
-.filter__title{
+.filter__title {
   font-size: 16px;
   font-weight: bold;
 }
-
-
-
-
+.shop__categories {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  padding-top: 20px;
+  gap: 100px;
+  border-bottom: 0.1rem solid rgb(187, 188, 188);
+}
+.categories__title {
+  font-size: 14px;
+  cursor: pointer;
+}
+.categories__link {
+  color: #000000;
+  position: relative;
+}
+.categories__title::after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #171a20;
+  position: absolute;
+  width: 100%;
+  top: 29px;
+}
+.title__inactive::after {
+  visibility: hidden;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: all 250ms ease;
+}
+.categories__title:hover.title__inactive::after {
+  transform: scaleX(1);
+  visibility: visible;
+  opacity: 1;
+}
+.link__inactive {
+  color: #6e6e6e;
+  transition: all 250ms ease;
+}
+.link__inactive:hover {
+  color: #000000;
+}
+.ads__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
 
 @media (max-width: 1685px) {
   .cards {
@@ -465,8 +513,8 @@ SHOP
 }
 
 @media (max-width: 880px) {
-  .card:nth-of-type(1),
-  .card:nth-of-type(4) {
+  #landing .card:nth-of-type(1),
+  #landing .card:nth-of-type(4) {
     display: none;
   }
 
@@ -508,4 +556,27 @@ SHOP
     rgba(0, 0, 0, 0) 35%,
     rgba(0, 0, 0, 0.8) 100%
   );
+}
+@media (max-width: 795px) {
+  #shop .ads__container {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #shop .card {
+    width: 200px;
+  }
+  #shop .card__img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 430px){
+  #shop .card {
+    width: 150px;
+  }
+  #shop .card__img {
+    width: 150px;
+    height: 150px;
+  }
 }

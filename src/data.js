@@ -7,8 +7,10 @@ export const ads = [
     originalPrice: 79.99,
     salePrice: null,
     new: true,
-    buy_link: "https://www.gavelo.com/products/green-melange-swirl-tights?variant=39527307608195",
+    buy_link:
+      "https://www.gavelo.com/products/green-melange-swirl-tights?variant=39527307608195",
     category: "clothes",
+    specific: "leggings",
   },
   {
     id: 2,
@@ -18,8 +20,10 @@ export const ads = [
     originalPrice: 59.99,
     salePrice: null,
     new: true,
-    buy_link: "https://www.def-shop.se/urban-classics-ladies-high-waist-cargo-pants-cherry.html",
+    buy_link:
+      "https://www.def-shop.se/urban-classics-ladies-high-waist-cargo-pants-cherry.html",
     category: "clothes",
+    specific: "cargo",
   },
   {
     id: 3,
@@ -31,6 +35,7 @@ export const ads = [
     new: true,
     buy_link: "https://www.gavelo.com/products/gavelo-black-white-swirl-tights",
     category: "clothes",
+    specific: "leggings",
   },
   {
     id: 4,
@@ -40,9 +45,10 @@ export const ads = [
     originalPrice: 49.99,
     salePrice: null,
     new: true,
-    buy_link: "https://www.shein.se/Seamless-Softness-Tie-Dye-Sports-Leggings-p-3118304-cat-2190.html?lang=sesv&url_from=seadplasw2108188136291087M_GPM&cid=17551476127&setid=&adid=&pf=GOOGLE&gclid=Cj0KCQjwrs2XBhDjARIsAHVymmSjCnW3l8n5cge4XWby6qHlrC95Y0En08LVrx4i-mWBkN4LGNzJGXEaAsneEALw_wcB&main_attr=27_1000120&mallCode=1",
+    buy_link:
+      "https://www.shein.se/Seamless-Softness-Tie-Dye-Sports-Leggings-p-3118304-cat-2190.html?lang=sesv&url_from=seadplasw2108188136291087M_GPM&cid=17551476127&setid=&adid=&pf=GOOGLE&gclid=Cj0KCQjwrs2XBhDjARIsAHVymmSjCnW3l8n5cge4XWby6qHlrC95Y0En08LVrx4i-mWBkN4LGNzJGXEaAsneEALw_wcB&main_attr=27_1000120&mallCode=1",
     category: "clothes",
-
+    specific: "leggings",
   },
   {
     id: 5,
@@ -53,9 +59,10 @@ export const ads = [
     salePrice: null,
     new: false,
     popular: true,
-    buy_link: "https://uk.gymshark.com/products/gymshark-sport-sports-bra-orange-print-ss22",
+    buy_link:
+      "https://uk.gymshark.com/products/gymshark-sport-sports-bra-orange-print-ss22",
     category: "clothes",
-
+    specific: "bra",
   },
   {
     id: 6,
@@ -66,9 +73,10 @@ export const ads = [
     salePrice: null,
     new: false,
     popular: true,
-    buy_link: "https://uk.gymshark.com/products/gymshark-ruched-sports-bra-core-olive-aw22",
+    buy_link:
+      "https://uk.gymshark.com/products/gymshark-ruched-sports-bra-core-olive-aw22",
     category: "clothes",
-
+    specific: "bra",
   },
   {
     id: 7,
@@ -79,9 +87,10 @@ export const ads = [
     salePrice: null,
     new: false,
     popular: true,
-    buy_link: "https://www.shein.se/Two-Tone-Contrast-Binding-Zipper-Sports-Bra-p-10596318-cat-2184.html?src_identifier=st%3D2%60sc%3Dbh%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_goods_detail1660140787714&mallCode=1&scici=Search~~EditSearch~~1~~bh~~~~0",
+    buy_link:
+      "https://www.shein.se/Two-Tone-Contrast-Binding-Zipper-Sports-Bra-p-10596318-cat-2184.html?src_identifier=st%3D2%60sc%3Dbh%60sr%3D0%60ps%3D1&src_module=search&src_tab_page_id=page_goods_detail1660140787714&mallCode=1&scici=Search~~EditSearch~~1~~bh~~~~0",
     category: "clothes",
-
+    specific: "bra",
   },
   {
     id: 8,
@@ -92,20 +101,22 @@ export const ads = [
     salePrice: null,
     new: false,
     popular: true,
-    buy_link: "https://uk.gymshark.com/products/gymshark-training-shorts-black-ss22",
+    buy_link:
+      "https://uk.gymshark.com/products/gymshark-training-shorts-black-ss22",
     category: "clothes",
-
+    specific: "shorts",
   },
   {
     id: 9,
     maker: "H2O",
     title: "H2O PUREMIST HUMIDIFIER",
     url: "https://cdn.shopify.com/s/files/1/0340/4772/1603/products/portable-300-ml-humidifier-usb-ultrasonic_main-0_720x.jpg?v=1641830168",
-    originalPrice: 35.00,
+    originalPrice: 35.0,
     salePrice: null,
     new: false,
     popular: true,
-    buy_link: "https://www.dekalgruvan.se/bilvard/kopia-mini-doftspridare-och-luftfuktare",
+    buy_link:
+      "https://www.dekalgruvan.se/bilvard/kopia-mini-doftspridare-och-luftfuktare",
     category: "accessories",
   },
   {
@@ -113,11 +124,12 @@ export const ads = [
     maker: "H2O",
     title: "H2O PUREMIST HUMIDIFIER",
     url: "https://cdn.shopify.com/s/files/1/0340/4772/1603/products/Portable-Ultrasonic-Humidifier-500ML-Snow-Mountain-H2O-USB-Aroma-Air-Diffuser-With-Romantic-Night-Lamp-Humidificador_720x.jpg?v=1599143484",
-    originalPrice: 40.00,
+    originalPrice: 40.0,
     salePrice: null,
     new: false,
     popular: true,
-    buy_link: "https://h2o-humidifiers.com/collections/humidifiers/products/alpine-ultrasonic-air-humidifier",
+    buy_link:
+      "https://h2o-humidifiers.com/collections/humidifiers/products/alpine-ultrasonic-air-humidifier",
     category: "accessories",
   },
   {
@@ -129,7 +141,8 @@ export const ads = [
     salePrice: null,
     new: false,
     popular: true,
-    buy_link: "https://h2o-humidifiers.com/collections/dual-spray/products/ridge-wireless-dual-spray-ultrasonic-air-humidifier",
+    buy_link:
+      "https://h2o-humidifiers.com/collections/dual-spray/products/ridge-wireless-dual-spray-ultrasonic-air-humidifier",
     category: "accessories",
   },
   {
@@ -137,12 +150,12 @@ export const ads = [
     maker: "H2O",
     title: "REPLACEMENT COTTON FILTERS 10PC (SELECT SIZE)",
     url: "https://cdn.shopify.com/s/files/1/0340/4772/1603/products/1511143351243_720x.png?v=1613676149",
-    originalPrice: 25.00,
+    originalPrice: 25.0,
     salePrice: null,
     new: false,
     popular: true,
-    buy_link: "https://h2o-humidifiers.com/products/replacement-cotton-filters-10pc",
+    buy_link:
+      "https://h2o-humidifiers.com/products/replacement-cotton-filters-10pc",
     category: "accessories",
   },
-
 ];
