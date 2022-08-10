@@ -423,12 +423,10 @@ transition: all 300ms ease;
 .card:first-of-type{
 display: none;
 }
-.card:last-of-type{
+.card:nth-of-type(2){
   display: none;
 }
-.card:nth-of-type(3){
-  display: none;
-}
+
   
   .cards {
     grid-template-columns: repeat(1, 1fr);
