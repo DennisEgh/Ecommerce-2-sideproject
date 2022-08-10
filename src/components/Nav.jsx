@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import cart from "../assets/cart.webp";
-
+import hamburger from "../assets/Hamburger_icon.svg"
 const Nav = () => {
   return (
     <nav>
@@ -49,7 +49,7 @@ const Nav = () => {
           </li>
           <li className="nav__list burger__menu">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/32px-Hamburger_icon.svg.png?20160819113547"
+              src={hamburger}
               alt=""
             />
           </li>
