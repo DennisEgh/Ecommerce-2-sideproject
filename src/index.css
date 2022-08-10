@@ -328,12 +328,15 @@ CARD
 .cards {
   grid-template-columns: repeat(4, 1fr);
   flex-direction: column;
-  gap: 20px;
+gap: 40px;
   width: 100%;
 
   display: grid;
 }
 
+.card__description{
+  padding: 20px;
+}
 .card__description--top {
   display: flex;
   justify-content: space-between;
@@ -364,6 +367,7 @@ CARD
 }
 .card__link{
   color: #000000;
+
   
 }
 .description__para--mid {
@@ -380,9 +384,17 @@ CARD
   margin-bottom: 5px;
   height: 470px;
   width: 370px;
+  
+  
 }
 .card {
   width: 370px;
+transition: all 300ms ease;
+  margin-bottom: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.card:hover{
+  transform: translateY(-5px);
 }
 .card__container {
   width: 370px;
