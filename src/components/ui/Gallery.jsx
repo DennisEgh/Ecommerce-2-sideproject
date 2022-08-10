@@ -12,7 +12,7 @@ const items = [
       <p className="item__para">
         See what all the fuss is about
       </p>
-      <Link to="/">
+      <Link className="item__button--link" to="/">
         <div className="item__button">
           <p className="button__para">SHOP</p>
         </div>
