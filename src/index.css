@@ -570,7 +570,11 @@ SHOP
     height: 200px;
   }
 }
-
+@media (max-width: 699px){
+  .shop__content--upper{
+    padding-left: 40px;
+  }
+}
 @media (max-width: 430px){
   #shop .card {
     width: 150px;
