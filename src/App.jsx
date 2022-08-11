@@ -10,6 +10,7 @@ import Shopleggings from "./pages/ShopLeggings";
 import Shopshorts from "./pages/ShopShorts";
 import Shopaccessories from "./pages/ShopAccessories";
 import Shopfragrances from "./pages/ShopFragrances";
+import Seimer from "./pages/seimer";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
           <Route path="/shop-shorts" element={<Shopshorts ads={ads}/>} />
           <Route path="/shop-accessories" element={<Shopaccessories ads={ads}/>} />
           <Route path="/shop-fragrances" element={<Shopfragrances ads={ads}/>} />
-          <Route path="/shop/:id" element={<ShopSpecific />} />
+          <Route path="/shop/:id" element={<ShopSpecific ads={ads} />} />
+          <Route path="/shop/:id/variant=XL" element={<Seimer ads={ads} />} />
         </Routes>
       </div>
     </Router>

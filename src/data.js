@@ -2,8 +2,12 @@ export const ads = [
   {
     id: 1,
     maker: "GAVELO",
-    title: "Green Melange Swirl Tights",
+    title: "Green Melange Swirl Leggings",
     url: "https://cdn.shopify.com/s/files/1/0381/9696/9603/products/gavelogreenmelangeswirl12_800x.jpg?v=1641817676",
+    url2: "https://cdn.shopify.com/s/files/1/0381/9696/9603/products/gavelogreenmelangeswirl13_800x.jpg?v=1641817676",
+    url3: "https://cdn.shopify.com/s/files/1/0381/9696/9603/products/gavelogreenmelangeswirl11_800x.jpg?v=1641817676",
+    url4: "https://cdn.shopify.com/s/files/1/0381/9696/9603/products/gavelogreenmelangeswirl14_800x.jpg?v=1641817676",
+    url5: "https://cdn.shopify.com/s/files/1/0381/9696/9603/products/gavelogreenmelangeswirl17_800x.jpg?v=1641817648",
     originalPrice: 79.99,
     salePrice: null,
     popular: false,
@@ -13,25 +17,14 @@ export const ads = [
     category: "clothes",
     specific: "leggings",
   },
+
   {
     id: 2,
-    maker: "URBAN CLASSICS",
-    title: "Cherry Red Cargo Pants High Waist",
-    url: "https://cdn.def-shop.com/cdn-cgi/image/w=530,q=95,f=auto/pic1300x1725/urban-classics-cargo-pants-roed-799506__1.jpg",
-    originalPrice: 59.99,
-    salePrice: null,
-    popular: false,
-    new: true,
-    buy_link:
-      "https://www.def-shop.se/urban-classics-ladies-high-waist-cargo-pants-cherry.html",
-    category: "clothes",
-    specific: "cargo",
-  },
-  {
-    id: 3,
     maker: "GAVELO",
-    title: "Green Black & White Swirly Leggings",
+    title: "Black & White Swirl Leggings",
     url: "https://cdn.shopify.com/s/files/1/0381/9696/9603/products/gaveloblack_whiteswirl19_800x.jpg?v=1638173726",
+    url2: "https://cdn.shopify.com/s/files/1/0381/9696/9603/products/gaveloblack_whiteswirl17_800x.jpg?v=1621856819",
+    url3: "https://cdn.shopify.com/s/files/1/0381/9696/9603/products/gaveloblack_whiteswirl424-5_a7ea6099-95da-48c7-97cb-bbdb1caaf073_800x.jpg?v=1621856978",
     originalPrice: 75.99,
     salePrice: null,
     popular: false,
@@ -41,7 +34,7 @@ export const ads = [
     specific: "leggings",
   },
   {
-    id: 4,
+    id: 3,
     maker: "BINDA",
     title: "Batik Colored Leggings",
     url: "https://img.ltwebstatic.com/images3_pi/2021/07/27/1627358099dd7fae706027ccce2f3df86a051b07f3_thumbnail_600x.webp",
@@ -55,7 +48,7 @@ export const ads = [
     specific: "leggings",
   },
   {
-    id: 5,
+    id: 4,
     maker: "GYMSHARK",
     title: "SPORT SPORTS BRA",
     url: "https://cdn.shopify.com/s/files/1/0098/8822/products/SportSportsBraRep-L-A0021ApricotOrangeB4A2Z-OBDX.D3-Edit_BK_438x.jpg?v=1652887101",
@@ -69,7 +62,7 @@ export const ads = [
     specific: "bra",
   },
   {
-    id: 6,
+    id: 5,
     maker: "GYMSHARK",
     title: "RUCHED SPORTS BRA",
     url: "https://cdn.shopify.com/s/files/1/0098/8822/products/RUCHEDTRAININGSPORTSBRA-CoreOliveB2A7A-EBF113copy_4983f57c-c37d-4853-b615-709500c7207b_438x.jpg?v=1658763134",
@@ -83,7 +76,7 @@ export const ads = [
     specific: "bra",
   },
   {
-    id: 7,
+    id: 6,
     maker: "SHEIN",
     title: "ZIPPER BLOCK SPORTS BRA",
     url: "https://img.ltwebstatic.com/images3_pi/2022/05/19/16529600730454f12535443057c91654544c3cc3c8_thumbnail_600x.webp",
@@ -97,7 +90,7 @@ export const ads = [
     specific: "bra",
   },
   {
-    id: 8,
+    id: 7,
     maker: "GYMSHARK",
     title: "TRAINING SHORTS",
     url: "https://cdn.shopify.com/s/files/1/0098/8822/products/TrainingShortsBlack17.A-Edit_HK_ZH_ZH_HK_8e37fa50-a2ad-4e6f-9aaa-619016f4522c_885x.jpg?v=1647012860",
@@ -111,7 +104,7 @@ export const ads = [
     specific: "shorts",
   },
   {
-    id: 9,
+    id: 8,
     maker: "H2O",
     title: "H2O PUREMIST HUMIDIFIER",
     url: "https://cdn.shopify.com/s/files/1/0340/4772/1603/products/portable-300-ml-humidifier-usb-ultrasonic_main-0_720x.jpg?v=1641830168",
@@ -122,10 +115,10 @@ export const ads = [
     buy_link:
       "https://www.dekalgruvan.se/bilvard/kopia-mini-doftspridare-och-luftfuktare",
     category: "accessories",
-    specific: "humidifier"
+    specific: "humidifier",
   },
   {
-    id: 10,
+    id: 9,
     maker: "H2O",
     title: "H2O PUREMIST HUMIDIFIER",
     url: "https://cdn.shopify.com/s/files/1/0340/4772/1603/products/Portable-Ultrasonic-Humidifier-500ML-Snow-Mountain-H2O-USB-Aroma-Air-Diffuser-With-Romantic-Night-Lamp-Humidificador_720x.jpg?v=1599143484",
@@ -136,10 +129,10 @@ export const ads = [
     buy_link:
       "https://h2o-humidifiers.com/collections/humidifiers/products/alpine-ultrasonic-air-humidifier",
     category: "accessories",
-    specific: "humidifier"
+    specific: "humidifier",
   },
   {
-    id: 11,
+    id: 10,
     maker: "H2O",
     title: "H2O PUREMIST HUMIDIFIER",
     url: "https://cdn.shopify.com/s/files/1/0340/4772/1603/products/product-image-1124036556_grande_7d08582a-ec51-40b5-9a98-686f9389dacc_720x.jpg?v=1594329180",
@@ -150,10 +143,10 @@ export const ads = [
     buy_link:
       "https://h2o-humidifiers.com/collections/dual-spray/products/ridge-wireless-dual-spray-ultrasonic-air-humidifier",
     category: "accessories",
-    specific: "humidifier"
+    specific: "humidifier",
   },
   {
-    id: 12,
+    id: 11,
     maker: "H2O",
     title: "REPLACEMENT COTTON FILTERS 10PC (SELECT SIZE)",
     url: "https://cdn.shopify.com/s/files/1/0340/4772/1603/products/1511143351243_720x.png?v=1613676149",
@@ -164,20 +157,20 @@ export const ads = [
     buy_link:
       "https://h2o-humidifiers.com/products/replacement-cotton-filters-10pc",
     category: "accessories",
-    specific: "humidifier"
+    specific: "humidifier",
   },
   {
-    id: 13,
+    id: 12,
     maker: "GYMSHARK",
     title: "VITAL SEAMLESS 2.0 LEGGINGS",
     url: "https://cdn.shopify.com/s/files/1/0098/8822/products/VITALSEAMLESSLEGGINGSBLACK27.A_ZH_ZH_7dbf9c1a-c695-479e-b67f-3e822329d155_885x.jpg?v=1658999618",
-    originalPrice: 70.00,
+    originalPrice: 70.0,
     salePrice: null,
     new: false,
     popular: true,
     buy_link:
       "https://uk.gymshark.com/products/gymshark-vital-seamless-leggings-black-marl-logo?gclid=Cj0KCQjwrs2XBhDjARIsAHVymmSyFCFgQoS3H0maZgqYuLvMQwvtWJ-HSoZ1k32pCe3sx8pNJu5TbD8aAnhwEALw_wcB",
     category: "clothes",
-    specific: "leggings"
+    specific: "leggings",
   },
 ];

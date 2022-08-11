@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Landingcardprice from "./Landingcardprice";
 
 const Landingcard = ({ ads }) => {
+    
   const [img, setImg] = useState();
 
   useEffect(() => {
