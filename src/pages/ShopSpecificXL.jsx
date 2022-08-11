@@ -10,14 +10,14 @@ const ShopSpecificXL = ({ ads }) => {
     <section id="shop-specific">
       <header>
         <div className="header__container">
-          <p className="article__name">
-            <Link className="home__link" to="/Shop">
-              Shop
-            </Link>{" "}
-            / {ad.title}
-          </p>
           <div className="header__main--content">
             <div className="header__pictures">
+              <p className="article__name">
+                <Link className="home__link" to="/Shop">
+                  Shop
+                </Link>{" "}
+                / {ad.title}
+              </p>
               <img className="header__img" src={ad.url} alt="" />
 
               <div className="header__pictures--second">
@@ -144,7 +144,7 @@ const ShopSpecificXL = ({ ads }) => {
                 </div>
               </div>
               <div className="buy__section">
-              {ad.size5 === "XL" ? (
+                {ad.size5 === "XL" ? (
                   <div className="cart__button">
                     <p className="cart__title">ADD TO BAG</p>
                   </div>

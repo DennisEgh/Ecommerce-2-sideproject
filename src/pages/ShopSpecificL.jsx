@@ -10,14 +10,14 @@ const ShopSpecificL = ({ ads }) => {
     <section id="shop-specific">
       <header>
         <div className="header__container">
+          <div className="header__main--content">
+            <div className="header__pictures">
           <p className="article__name">
             <Link className="home__link" to="/Shop">
               Shop
             </Link>{" "}
             / {ad.title}
           </p>
-          <div className="header__main--content">
-            <div className="header__pictures">
               <img className="header__img" src={ad.url} alt="" />
 
               <div className="header__pictures--second">
