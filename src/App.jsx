@@ -10,7 +10,12 @@ import Shopleggings from "./pages/ShopLeggings";
 import Shopshorts from "./pages/ShopShorts";
 import Shopaccessories from "./pages/ShopAccessories";
 import Shopfragrances from "./pages/ShopFragrances";
-import Seimer from "./pages/seimer";
+
+import ShopSpecificS from "./pages/ShopSpecificS";
+import ShopSpecificM from "./pages/ShopSpecificM";
+import ShopSpecificL from "./pages/ShopSpecificL";
+import ShopSpecificXL from "./pages/ShopSpecificXL";
+import ShopSpecificXXL from "./pages/ShopSpecificXXL";
 
 function App() {
   return (
@@ -26,7 +31,12 @@ function App() {
           <Route path="/shop-accessories" element={<Shopaccessories ads={ads}/>} />
           <Route path="/shop-fragrances" element={<Shopfragrances ads={ads}/>} />
           <Route path="/shop/:id" element={<ShopSpecific ads={ads} />} />
-          <Route path="/shop/:id/variant=XL" element={<Seimer ads={ads} />} />
+       
+          <Route path="/shop/:id/variant=Small" element={<ShopSpecificS ads={ads} />} />
+          <Route path="/shop/:id/variant=Large" element={<ShopSpecificL ads={ads} />} />
+          <Route path="/shop/:id/variant=Medium" element={<ShopSpecificM ads={ads} />} />
+          <Route path="/shop/:id/variant=ExtraLarge" element={<ShopSpecificXL ads={ads} />} />
+          <Route path="/shop/:id/variant=ExtraExtraLarge" element={<ShopSpecificXXL ads={ads} />} />
         </Routes>
       </div>
     </Router>

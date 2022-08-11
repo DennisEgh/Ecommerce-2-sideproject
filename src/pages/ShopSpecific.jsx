@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
+import diag from "../assets/diagonal.png";
 
 const ShopSpecific = ({ ads }) => {
   const { id } = useParams();
@@ -10,12 +11,8 @@ const ShopSpecific = ({ ads }) => {
       <header>
         <div className="header__container">
           <p className="article__name">
-            <Link className="home__link" to="/">
-              Home
-            </Link>{" "}
-            /{" "}
-            <Link className="home__link" to="/shop-leggings">
-              Leggings
+            <Link className="home__link" to="/Shop">
+              Shop
             </Link>{" "}
             / {ad.title}
           </p>
@@ -36,41 +33,134 @@ const ShopSpecific = ({ ads }) => {
                 </div>
                 <p className="article__maker">{ad.maker}</p>
               </div>
-              <div className="sizes__container">
-                <div className="size__info">
-                  <p className="size__title">SELECT SIZE</p>
-                  <ul className="sizes__options">
-                    <Link className="options__link link__active" to="/">
-                      <li className="option">XSS</li>
-                    </Link>
-                    <Link className="options__link " to="/">
-                      <li className="option">XS</li>
-                    </Link>
-                    <Link className="options__link " to="/">
-                      <li className="option">S</li>
-                    </Link>
-                    <Link className="options__link " to="/">
-                      <li className="option">M</li>
-                    </Link>
-                    <Link className="options__link " to="/">
-                      <li className="option">L</li>
-                    </Link>
-                    <Link
-                      className="options__link "
-                      to={`/shop/${id}/variant=XL`}
-                    >
-                      <li className="option">XL</li>
-                    </Link>
-                    <Link className="options__link" to="/">
-                      <li className="option">XXL</li>
-                    </Link>
-                  </ul>
+
+              {ad.id && ad.category === "clothes" ? (
+                <div className="sizes__container">
+                  <div className="size__info">
+                    <p className="size__title">SELECT SIZE</p>
+                    <ul className="sizes__options">
+                      {ad.size1 === "XS" ? (
+                        <Link
+                          className="options__link link__active"
+                          to={`/shop/${id}`}
+                        >
+                          <li className="option">XS</li>
+                        </Link>
+                      ) : (
+                        <Link
+                          className="options__link "
+                          id="link__dead"
+                          to={`/shop/${id}`}
+                        >
+                          <img className="diagonal" src={diag} alt="" />
+                          <li className="option">XS</li>
+                        </Link>
+                      )}
+
+                      {ad.size2 === "S" ? (
+                        <Link
+                          className="options__link "
+                          to={`/shop/${id}/variant=Small`}
+                        >
+                          <li className="option">S</li>
+                        </Link>
+                      ) : (
+                        <Link
+                          className="options__link "
+                          id="link__dead"
+                          to={`/shop/${id}/variant=Small`}
+                        >
+                          <img className="diagonal" src={diag} alt="" />
+                          <li className="option">S</li>
+                        </Link>
+                      )}
+
+                      {ad.size3 === "M" ? (
+                        <Link
+                          className="options__link "
+                          to={`/shop/${id}/variant=Medium`}
+                        >
+                          <li className="option">M</li>
+                        </Link>
+                      ) : (
+                        <Link
+                          className="options__link "
+                          id="link__dead"
+                          to={`/shop/${id}/variant=Medium`}
+                        >
+                          <img className="diagonal" src={diag} alt="" />
+                          <li className="option">M</li>
+                        </Link>
+                      )}
+                      {ad.size4 === "L" ? (
+                        <Link
+                          className="options__link "
+                          to={`/shop/${id}/variant=Large`}
+                        >
+                          <li className="option">L</li>
+                        </Link>
+                      ) : (
+                        <Link
+                          className="options__link "
+                          id="link__dead"
+                          to={`/shop/${id}/variant=Large`}
+                        >
+                          <img className="diagonal" src={diag} alt="" />
+                          <li className="option">L</li>
+                        </Link>
+                      )}
+
+                      {ad.size5 === "XL" ? (
+                        <Link
+                          className="options__link "
+                          to={`/shop/${id}/variant=ExtraLarge`}
+                        >
+                          <li className="option">XL</li>
+                        </Link>
+                      ) : (
+                        <Link
+                          className="options__link "
+                          id="link__dead"
+                          to={`/shop/${id}/variant=ExtraLarge`}
+                        >
+                          <img className="diagonal" src={diag} alt="" />
+                          <li className="option">XL</li>
+                        </Link>
+                      )}
+
+                      {ad.size6 === "XXL" ? (
+                        <Link
+                          className="options__link"
+                          to={`/shop/${id}/variant=ExtraExtraLarge`}
+                        >
+                          <li className="option">XXL</li>
+                        </Link>
+                      ) : (
+                        <Link
+                          className="options__link"
+                          id="link__dead"
+                          to={`/shop/${id}/variant=ExtraExtraLarge`}
+                        >
+                          <img className="diagonal" src={diag} alt="" />
+                          <li className="option">XXL</li>
+                        </Link>
+                      )}
+                    </ul>
+                  </div>
                 </div>
-              </div>
+              ) : null}
+
               <div className="buy__section">
-                <div className="cart__button">
-                  <p className="cart__title">ADD TO BAG</p>
-                </div>
+                {ad.size1 === "XS" ? (
+                  <div className="cart__button">
+                    <p className="cart__title">ADD TO BAG</p>
+                  </div>
+                ) : (
+                  <div className="cart__button noPointer">
+                    <p className="cart__title">ADD TO BAG</p>
+                  </div>
+                )}
+
                 <div className="buy__info">
                   <div className="info__container">
                     <img
@@ -98,18 +188,14 @@ const ShopSpecific = ({ ads }) => {
                       src="https://images.ctfassets.net/wl6q2in9o7k3/7mSTqYj4UaUW361hJ5Ev5q/e2a5f088fef7e2f2cc8e34f1d25e7bd3/Combined_Shape__2_.svg"
                       alt=""
                     />
-                    <p className="buy__info--para">
-                      Safe And Quick
-                    </p>
+                    <p className="buy__info--para">Safe And Quick</p>
                   </div>
                 </div>
               </div>
-                <div className="article__info">
-                    <p className="ad__description">
-                    {ad.description}
-
-                    </p>
-                </div>
+              <div className="article__info">
+                <h4 className="ad__title">DESCRIPTION</h4>
+                <p className="ad__description">{ad.description}</p>
+              </div>
             </div>
           </div>
         </div>
