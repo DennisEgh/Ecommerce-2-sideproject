@@ -32,6 +32,7 @@ export const ads = [
     buy_link: "https://www.gavelo.com/products/gavelo-black-white-swirl-tights",
     category: "clothes",
     specific: "leggings",
+    description: "Black & White Swirl Comfort tights. The originals are made in a soft and very stretchy black melange fabric with white panels. We have designed this model with a high waist that goes down in a V shape at the back, this contributes to a flattering silhouette. A weak scrunch that is flattering for the butt. A tights model that we designed to bring out your shapes. Regular fit. Choose your usual size, or go down a size if you are between two sizes"
   },
   {
     id: 3,

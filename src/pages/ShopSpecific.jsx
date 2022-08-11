@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import Landingcardprice from "../components/ui/Landingcardprice";
 
 const ShopSpecific = ({ ads }) => {
   const { id } = useParams();
@@ -30,7 +29,7 @@ const ShopSpecific = ({ ads }) => {
               </div>
             </div>
             <div className="article__information">
-              <div>
+              <div className="flexbox">
                 <div className="article__title--container">
                   <h1 className="article__title">{ad.title} </h1>
                   <p className="article__price">${ad.originalPrice}</p>
@@ -105,6 +104,12 @@ const ShopSpecific = ({ ads }) => {
                   </div>
                 </div>
               </div>
+                <div className="article__info">
+                    <p className="ad__description">
+                    {ad.description}
+
+                    </p>
+                </div>
             </div>
           </div>
         </div>
