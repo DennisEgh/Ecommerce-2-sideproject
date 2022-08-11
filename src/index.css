@@ -742,6 +742,9 @@ SHOP SPECIFIC
     width: 400px;
     height: 500px;
   }
+  .header__main--content{
+    gap: 50px;
+  }
   .header__img--second {
     width: 195px;
     height: 250px;
