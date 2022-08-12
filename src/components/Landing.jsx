@@ -8,7 +8,7 @@ import Landingcard from "./ui/Landingcard";
 const Landing = ({ ads }) => {
   const { id } = useParams();
   const ad = ads.find((ads) => +ads.id === +id)
-console.log(ad)
+
   return (
     <section id="landing">
       <header>
