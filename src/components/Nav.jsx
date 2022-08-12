@@ -4,7 +4,13 @@ import logo from "../assets/logo.png";
 import bag from "../assets/bag.webp";
 import hamburger from "../assets/Hamburger_icon.svg";
 import Cart from "./ui/Cart";
-const Nav = ({ numberOfItems, cart, addQuantity, removeItem }) => {
+const Nav = ({ numberOfItems, cart, changeQuantity, removeItem }) => {
+  
+
+  function toggleCart(){
+    document.querySelector("#checkout").classList.toggle("checkout__visible")
+  }
+
   return (
     <nav>
       <div className="nav__container">
@@ -34,10 +40,10 @@ const Nav = ({ numberOfItems, cart, addQuantity, removeItem }) => {
         <ul className="nav__links nav__links--end">
           <li className="nav__list cart">
             <div className="nav__link" to="/">
-              <img className="cart__logo" src={bag} alt="" />
-              <Cart cart={cart} changeQuantity={addQuantity} />
+              <img onClick={toggleCart} className="cart__logo" src={bag} alt="" />
+              <Cart cart={cart} changeQuantity={changeQuantity} removeItem={removeItem} />
               {numberOfItems() > 0 && (
-                <div className="cart__length">{numberOfItems()}</div>
+                <div onClick={toggleCart}  className="cart__length">{numberOfItems()}</div>
               )}
             </div>
           </li>

@@ -39,7 +39,7 @@ function App() {
   }
   
 
-  function addQuantity(ad, quantity) {
+  function changeQuantity(ad, quantity) {
     setCart(
       cart.map((item) =>
         item.id === ad.id
@@ -53,7 +53,7 @@ function App() {
   }
 
   function removeItem(item) {
-    setCart(cart.filter((ad) => ad.id !== item.id));
+    setCart(cart.filter((ad) => ad.id !== item.id  ));
   }
 
   function numberOfItems() {
@@ -64,14 +64,14 @@ function App() {
     return counter;
   }
 
-  useEffect(() => {}, [cart]);
+  useEffect(() => {console.log(cart)}, [cart]);
 
   return (
     <Router>
       <div className="App">
         <Nav
           numberOfItems={numberOfItems}
-          chargeQuantity={addQuantity}
+          changeQuantity={changeQuantity}
           removeItem={removeItem}
           cart={cart}
         />

@@ -665,13 +665,21 @@ CART
   width: 400px;
   border-radius: 10px;
 
+  opacity: 0;
+  visibility: hidden;
   background-color: #f5f5f5;
   position: absolute;
-  z-index: 9999;
+  z-index: -1;
   top: 45px;
   right: 120px;
   cursor: default;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 300ms ease;
+}
+.checkout__visible{
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 9999 !important;
 }
 .checkout__upper {
   height: 40px;
@@ -747,8 +755,30 @@ CART
   font-weight: 500;
 }
 .bag__input{
- width: 25px;
-  
+  width: 30px;
+}
+
+.bag__remove{
+  cursor: pointer;
+  font-size: 12px;
+  color: #000000;
+  font-weight: 500;
+  margin-top: 11px;
+  position: relative;
+  top: 2px;
+  transition: all 300ms ease;
+
+  width: 45px;
+}
+.bag__remove:hover{
+  color: red;
+}
+
+.bag__total{
+  position: relative;
+  top: -20px;
+  left: -15px;
+  font-weight: 500;
 }
 @media (max-width: 1685px) {
   .cards {
@@ -831,6 +861,9 @@ CART
 }
 
 @media (max-width: 830px) {
+  #checkout{
+   right: 0 ;
+  }
   .header__img {
     width: 400px;
     height: 500px;
@@ -880,6 +913,12 @@ CART
   }
 }
 @media (max-width: 440px) {
+#checkout{
+  width: 250px;
+}
+.bag__total{
+  left: 0;
+}
   .header__img {
     width: 200px;
     height: 250px;
