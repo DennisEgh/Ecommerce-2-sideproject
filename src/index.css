@@ -672,6 +672,7 @@ CART
   z-index: 9999;
   top: 50px;
   right: 120px;
+  cursor: default;
 }
 .checkout__upper{
   height: 40px;

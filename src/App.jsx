@@ -10,7 +10,6 @@ import Shopleggings from "./pages/ShopLeggings";
 import Shopshorts from "./pages/ShopShorts";
 import Shopaccessories from "./pages/ShopAccessories";
 import Shopfragrances from "./pages/ShopFragrances";
-
 import ShopSpecificS from "./pages/ShopSpecificS";
 import ShopSpecificM from "./pages/ShopSpecificM";
 import ShopSpecificL from "./pages/ShopSpecificL";
@@ -20,14 +19,30 @@ import ShopSpecificXXL from "./pages/ShopSpecificXXL";
 function App() {
   const [cart, setCart] = useState([]);
 
-  function addToCart(ads) {
-    setCart([...cart, { ...ads, quantity: 1, size: "ExtraSmall" }]);
+  function addToCart(ad) {
+    setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "XS" }]);
   }
+  function addToCartL(ad){
+    setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "L" }]);
+  }
+  function addToCartM(ad){
+    setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "M" }]);
+  }
+  function addToCartS(ad){
+    setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "S" }]);
+  }
+  function addToCartXL(ad){
+    setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "XL" }]);
+  }
+  function addToCartXXL(ad){
+    setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "XXL" }]);
+  }
+  
 
-  function chargeQuantity(ads, quantity) {
+  function changeQuantity(ad, quantity) {
     setCart(
       cart.map((item) =>
-        item.id === ads.id
+        item.id === ad.id
           ? {
               ...item,
               quantity: +quantity,
@@ -38,7 +53,7 @@ function App() {
   }
 
   function removeItem(item) {
-    setCart(cart.filter((ads) => ads.id !== item.id));
+    setCart(cart.filter((ad) => ad.id !== item.id));
   }
 
   function numberOfItems() {
@@ -49,16 +64,14 @@ function App() {
     return counter;
   }
 
-  useEffect(() => {
-    
-  }, [cart]);
+  useEffect(() => {}, [cart]);
 
   return (
     <Router>
       <div className="App">
         <Nav
           numberOfItems={numberOfItems}
-          chargeQuantity={chargeQuantity}
+          chargeQuantity={changeQuantity}
           removeItem={removeItem}
         />
         <Routes>
@@ -84,23 +97,23 @@ function App() {
 
           <Route
             path="/shop/:id/variant=Small"
-            element={<ShopSpecificS ads={ads} />}
+            element={<ShopSpecificS ads={ads} addToCartS={addToCartS} cart={cart} />}
           />
           <Route
             path="/shop/:id/variant=Large"
-            element={<ShopSpecificL ads={ads} />}
+            element={<ShopSpecificL ads={ads} addToCartL={addToCartL} cart={cart} />}
           />
           <Route
             path="/shop/:id/variant=Medium"
-            element={<ShopSpecificM ads={ads} />}
+            element={<ShopSpecificM ads={ads} addToCartM={addToCartM} cart={cart}/>}
           />
           <Route
             path="/shop/:id/variant=ExtraLarge"
-            element={<ShopSpecificXL ads={ads} />}
+            element={<ShopSpecificXL ads={ads} addToCartXL={addToCartXL} cart={cart}/>}
           />
           <Route
             path="/shop/:id/variant=ExtraExtraLarge"
-            element={<ShopSpecificXXL ads={ads} />}
+            element={<ShopSpecificXXL ads={ads} addToCartXXL={addToCartXXL} cart={cart} />}
           />
         </Routes>
       </div>

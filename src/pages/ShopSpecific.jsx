@@ -1,19 +1,18 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import diag from "../assets/diagonal.png";
-import Cart from "../components/ui/Cart";
+import CartButton from "../components/ui/CartButton";
 
 const ShopSpecific = ({ ads, addToCart, cart }) => {
   const { id } = useParams();
-  const ad = ads.find((ads) => +ads.id === +id);
+  const ad = ads.find((ad) => +ad.id === +id);
 
   function addArticleToCart(ad) {
     addToCart(ad);
-}
-function articleExistsOnCart() {
-    return cart.find((ad) => ad.id === +id);
-}
-
+  }
+  function articleExistsOnCart() {
+    return cart.find((ad) => ad.id === +id && ad.CHOSEN_SIZE === "XS");
+  }
 
   return (
     <section id="shop-specific">
@@ -160,14 +159,12 @@ function articleExistsOnCart() {
               ) : null}
 
               <div className="buy__section">
-                {ad.size1 === "XS" ? (
-                  <div  className="cart__button">
-                    <p className="cart__title">ADD TO BAG</p>
+                {articleExistsOnCart() ? (
+                  <div  className="cart__button noPointer">
+                    <p className="cart__title">ADDED TO CHECKOUT</p>
                   </div>
                 ) : (
-                  <div className="cart__button noPointer">
-                    <p className="cart__title">ADD TO BAG</p>
-                  </div>
+                  <CartButton ad={ad} addArticleToCart={addArticleToCart} />
                 )}
 
                 <div className="buy__info">

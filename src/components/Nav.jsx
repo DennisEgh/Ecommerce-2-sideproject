@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 import cart from "../assets/cart.webp";
 import hamburger from "../assets/Hamburger_icon.svg";
 import Cart from "./ui/Cart";
-const Nav = () => {
+const Nav = ({ numberOfItems, changeQuantity, removeItem }) => {
   return (
     <nav>
       <div className="nav__container">
@@ -33,11 +33,13 @@ const Nav = () => {
         </ul>
         <ul className="nav__links nav__links--end">
           <li className="nav__list cart">
-            <Link className="nav__link" to="/">
+            <div className="nav__link" to="/">
               <img className="cart__logo" src={cart} alt="" />
               <Cart />
-              <div className="cart__length"></div>
-            </Link>
+              {numberOfItems() > 0 && (
+                <div className="cart__length">{numberOfItems()}</div>
+              )}
+            </div>
           </li>
           <li className="nav__list">
             <Link className="nav__link" to="/">

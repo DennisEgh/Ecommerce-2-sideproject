@@ -1,10 +1,18 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import diag from "../assets/diagonal.png";
+import CartButtonL from "../components/ui/CartButtonL";
 
-const ShopSpecificL = ({ ads }) => {
+const ShopSpecificL = ({ ads, addToCartL, cart }) => {
   const { id } = useParams();
-  const ad = ads.find((ads) => +ads.id === +id);
+  const ad = ads.find((ad) => +ad.id === +id);
+
+  function addArticleToCart(ad) {
+    addToCartL(ad);
+  }
+  function articleExistsOnCart() {
+    return cart.find((ad) => ad.id === +id && ad.CHOSEN_SIZE === "L");
+  }
 
   return (
     <section id="shop-specific">
@@ -12,12 +20,12 @@ const ShopSpecificL = ({ ads }) => {
         <div className="header__container">
           <div className="header__main--content">
             <div className="header__pictures">
-          <p className="article__name">
-            <Link className="home__link" to="/Shop">
-              Shop
-            </Link>{" "}
-            / {ad.title}
-          </p>
+              <p className="article__name">
+                <Link className="home__link" to="/Shop">
+                  Shop
+                </Link>{" "}
+                / {ad.title}
+              </p>
               <img className="header__img" src={ad.url} alt="" />
 
               <div className="header__pictures--second">
@@ -144,15 +152,14 @@ const ShopSpecificL = ({ ads }) => {
                 </div>
               </div>
               <div className="buy__section">
-                {ad.size4 === "L" ? (
-                  <div className="cart__button">
-                    <p className="cart__title">ADD TO BAG</p>
+                {articleExistsOnCart() ? (
+                  <div className="cart__button noPointer">
+                    <p className="cart__title">ADDED TO CHECKOUT</p>
                   </div>
                 ) : (
-                  <div className="cart__button noPointer">
-                    <p className="cart__title">ADD TO BAG</p>
-                  </div>
+                  <CartButtonL ad={ad} addArticleToCart={addArticleToCart} />
                 )}
+
                 <div className="buy__info">
                   <div className="info__container">
                     <img
