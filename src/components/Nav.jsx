@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import cart from "../assets/cart.webp";
 import hamburger from "../assets/Hamburger_icon.svg";
+import Cart from "./ui/Cart";
 const Nav = () => {
   return (
     <nav>
@@ -34,7 +35,7 @@ const Nav = () => {
           <li className="nav__list cart">
             <Link className="nav__link" to="/">
               <img className="cart__logo" src={cart} alt="" />
-
+              <Cart />
               <div className="cart__length"></div>
             </Link>
           </li>
