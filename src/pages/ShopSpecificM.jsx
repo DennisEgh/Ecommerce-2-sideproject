@@ -153,7 +153,7 @@ const ShopSpecificM = ({ ads, cart, addToCartM }) => {
               <div className="buy__section">
               {articleExistsOnCart() ? (
                   <div  className="cart__button noPointer">
-                    <p className="cart__title">ADDED TO CHECKOUT</p>
+                    <p className="cart__title">ADDED TO BAG</p>
                   </div>
                 ) : (
                   <CartButtonM ad={ad} addArticleToCart={addArticleToCart} />

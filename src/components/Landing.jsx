@@ -1,13 +1,13 @@
 import React from "react";
 import Gallery from "./ui/Gallery";
 import "../index.css";
-import { useParams } from "react-router-dom";
+
 import Landingcard from "./ui/Landingcard";
 
 
 const Landing = ({ ads }) => {
-  const { id } = useParams();
-  const ad = ads.find((ads) => +ads.id === +id)
+ 
+ 
 
   return (
     <section id="landing">

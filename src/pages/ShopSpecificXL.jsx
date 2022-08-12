@@ -156,7 +156,7 @@ const ShopSpecificXL = ({ ads, cart, addToCartXL }) => {
               <div className="buy__section">
               {articleExistsOnCart() ? (
                   <div  className="cart__button noPointer">
-                    <p className="cart__title">ADDED TO CHECKOUT</p>
+                    <p className="cart__title">ADDED TO BAG</p>
                   </div>
                 ) : (
                   <CartButtonXL ad={ad} addArticleToCart={addArticleToCart} />
