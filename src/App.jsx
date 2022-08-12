@@ -22,22 +22,21 @@ function App() {
   function addToCart(ad) {
     setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "XS" }]);
   }
-  function addToCartL(ad){
+  function addToCartL(ad) {
     setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "L" }]);
   }
-  function addToCartM(ad){
+  function addToCartM(ad) {
     setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "M" }]);
   }
-  function addToCartS(ad){
+  function addToCartS(ad) {
     setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "S" }]);
   }
-  function addToCartXL(ad){
+  function addToCartXL(ad) {
     setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "XL" }]);
   }
-  function addToCartXXL(ad){
+  function addToCartXXL(ad) {
     setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "XXL" }]);
   }
-  
 
   function changeQuantity(ad, quantity) {
     setCart(
@@ -53,7 +52,7 @@ function App() {
   }
 
   function removeItem(item) {
-    setCart(cart.filter((ad) => ad.id !== item.id  ));
+    setCart(cart.filter((ad) => ad.id !== item.id));
   }
 
   function numberOfItems() {
@@ -64,7 +63,7 @@ function App() {
     return counter;
   }
 
-  useEffect(() => {console.log(cart)}, [cart]);
+  useEffect(() => {}, [cart]);
 
   return (
     <Router>
@@ -98,23 +97,37 @@ function App() {
 
           <Route
             path="/shop/:id/variant=Small"
-            element={<ShopSpecificS ads={ads} addToCartS={addToCartS} cart={cart} />}
+            element={
+              <ShopSpecificS ads={ads} addToCartS={addToCartS} cart={cart} />
+            }
           />
           <Route
             path="/shop/:id/variant=Large"
-            element={<ShopSpecificL ads={ads} addToCartL={addToCartL} cart={cart} />}
+            element={
+              <ShopSpecificL ads={ads} addToCartL={addToCartL} cart={cart} />
+            }
           />
           <Route
             path="/shop/:id/variant=Medium"
-            element={<ShopSpecificM ads={ads} addToCartM={addToCartM} cart={cart}/>}
+            element={
+              <ShopSpecificM ads={ads} addToCartM={addToCartM} cart={cart} />
+            }
           />
           <Route
             path="/shop/:id/variant=ExtraLarge"
-            element={<ShopSpecificXL ads={ads} addToCartXL={addToCartXL} cart={cart}/>}
+            element={
+              <ShopSpecificXL ads={ads} addToCartXL={addToCartXL} cart={cart} />
+            }
           />
           <Route
             path="/shop/:id/variant=ExtraExtraLarge"
-            element={<ShopSpecificXXL ads={ads} addToCartXXL={addToCartXXL} cart={cart} />}
+            element={
+              <ShopSpecificXXL
+                ads={ads}
+                addToCartXXL={addToCartXXL}
+                cart={cart}
+              />
+            }
           />
         </Routes>
       </div>

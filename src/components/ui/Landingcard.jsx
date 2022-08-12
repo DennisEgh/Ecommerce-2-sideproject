@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Landingcardprice from "./Landingcardprice";
 
 const Landingcard = ({ ads }) => {
-    
   const [img, setImg] = useState();
 
   useEffect(() => {
@@ -44,9 +43,7 @@ const Landingcard = ({ ads }) => {
         </>
       ) : (
         <div className="card">
-          <div className="skeleton">
-           
-          </div>
+          <div className="skeleton"></div>
         </div>
       )}
     </>

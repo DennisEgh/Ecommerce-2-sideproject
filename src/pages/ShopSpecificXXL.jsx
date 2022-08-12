@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import diag from "../assets/diagonal.png";
 import CartButtonXXL from "../components/ui/CartButtonXXL";
+import Landingcardprice from "../components/ui/Landingcardprice";
 
 const ShopSpecificXXL = ({ ads, cart, addToCartXXL }) => {
   const { id } = useParams();
@@ -36,7 +37,10 @@ const ShopSpecificXXL = ({ ads, cart, addToCartXXL }) => {
               <div className="flexbox">
                 <div className="article__title--container">
                   <h1 className="article__title">{ad.title} </h1>
-                  <p className="article__price">${ad.originalPrice}</p>
+                  <Landingcardprice
+                    salePrice={ad.salePrice}
+                    originalPrice={ad.originalPrice}
+                  />
                 </div>
                 <p className="article__maker">{ad.maker}</p>
               </div>
