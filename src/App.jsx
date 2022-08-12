@@ -39,7 +39,7 @@ function App() {
   }
   
 
-  function changeQuantity(ad, quantity) {
+  function addQuantity(ad, quantity) {
     setCart(
       cart.map((item) =>
         item.id === ad.id
@@ -71,8 +71,9 @@ function App() {
       <div className="App">
         <Nav
           numberOfItems={numberOfItems}
-          chargeQuantity={changeQuantity}
+          chargeQuantity={addQuantity}
           removeItem={removeItem}
+          cart={cart}
         />
         <Routes>
           <Route path="/" element={<Home ads={ads} />} />

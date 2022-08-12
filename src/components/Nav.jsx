@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import cart from "../assets/cart.webp";
+import bag from "../assets/bag.webp";
 import hamburger from "../assets/Hamburger_icon.svg";
 import Cart from "./ui/Cart";
-const Nav = ({ numberOfItems, changeQuantity, removeItem }) => {
+const Nav = ({ numberOfItems, cart, addQuantity, removeItem }) => {
   return (
     <nav>
       <div className="nav__container">
@@ -34,8 +34,8 @@ const Nav = ({ numberOfItems, changeQuantity, removeItem }) => {
         <ul className="nav__links nav__links--end">
           <li className="nav__list cart">
             <div className="nav__link" to="/">
-              <img className="cart__logo" src={cart} alt="" />
-              <Cart />
+              <img className="cart__logo" src={bag} alt="" />
+              <Cart cart={cart} changeQuantity={addQuantity} />
               {numberOfItems() > 0 && (
                 <div className="cart__length">{numberOfItems()}</div>
               )}
