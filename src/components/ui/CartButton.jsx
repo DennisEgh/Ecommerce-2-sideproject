@@ -1,4 +1,4 @@
-import { color } from "@mui/system";
+
 import React from "react";
 
 const CartButton = ({ ad, addArticleToCart, addArticleToCartPink }) => {
