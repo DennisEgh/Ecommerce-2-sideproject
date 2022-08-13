@@ -22,11 +22,7 @@ function App() {
   const [cart, setCart] = useState([]);
 
   function addToCart(ad) {
-    {
-      ad.category === "clothes"
-        ? setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "XS" }])
-        : setCart([...cart, { ...ad, quantity: 1 }]);
-    }
+    setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "XS" }]);
   }
   function addToCartL(ad) {
     setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "L" }]);
@@ -108,13 +104,21 @@ function App() {
           <Route
             path="/shop/:id/variant=black"
             element={
-              <ShopSpecificBlack ads={ads} addToCartBlack={addToCartBlack} cart={cart} />
+              <ShopSpecificBlack
+                ads={ads}
+                addToCartBlack={addToCartBlack}
+                cart={cart}
+              />
             }
           />
           <Route
             path="/shop/:id/variant=white"
             element={
-              <ShopSpecificWhite ads={ads} addToCartWhite={addToCartWhite} cart={cart} />
+              <ShopSpecificWhite
+                ads={ads}
+                addToCartWhite={addToCartWhite}
+                cart={cart}
+              />
             }
           />
           <Route
