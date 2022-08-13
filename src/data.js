@@ -182,9 +182,9 @@ export const ads = [
     specific: "humidifier",
     description:
      "Moisturize the dry air in your home or office in minutes. This aesthetically pleasing air-hydrating device adds much-needed moisture to your air, directly combating the negative effects of an overly-dry environment.",
-  color: "black",
-  color2: "white",
-  color3: "pink"
+  color: "BLACK",
+  color2: "WHITE",
+  color3: "PINK",
     },
   {
     id: 9,

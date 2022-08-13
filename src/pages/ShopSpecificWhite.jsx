@@ -1,15 +1,15 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import diag from "../assets/diagonal.png";
-import CartButton from "../components/ui/CartButton";
+import CartButtonWhite from "../components/ui/CartButtonWhite";
 import Landingcardprice from "../components/ui/Landingcardprice";
 
-const ShopSpecificWhite = ({ ads, addToCart, cart }) => {
+const ShopSpecificWhite = ({ ads, addToCartWhite, cart }) => {
   const { id } = useParams();
   const ad = ads.find((ad) => +ad.id === +id);
 
-  function addArticleToCart(ad) {
-    addToCart(ad);
+  function addArticleToCartWhite(ad) {
+    addToCartWhite(ad);
   }
   function articleExistsOnCart() {
     return cart.find((ad) => ad.id === +id);
@@ -69,129 +69,17 @@ const ShopSpecificWhite = ({ ads, addToCart, cart }) => {
                   </div>
                 </div>
               ) : null}
-              {ad.id && ad.category === "clothes" ? (
-                <div className="sizes__container">
-                  <div className="size__info">
-                    <p className="size__title">SELECT SIZE</p>
-                    <ul className="sizes__options">
-                      {ad.size1 === "XS" ? (
-                        <Link
-                          className="options__link link__active"
-                          to={`/shop/${id}`}
-                        >
-                          <li className="option">XS</li>
-                        </Link>
-                      ) : (
-                        <Link
-                          className="options__link "
-                          id="link__dead"
-                          to={`/shop/${id}`}
-                        >
-                          <img className="diagonal" src={diag} alt="" />
-                          <li className="option">XS</li>
-                        </Link>
-                      )}
-
-                      {ad.size2 === "S" ? (
-                        <Link
-                          className="options__link "
-                          to={`/shop/${id}/variant=Small`}
-                        >
-                          <li className="option">S</li>
-                        </Link>
-                      ) : (
-                        <Link
-                          className="options__link "
-                          id="link__dead"
-                          to={`/shop/${id}/variant=Small`}
-                        >
-                          <img className="diagonal" src={diag} alt="" />
-                          <li className="option">S</li>
-                        </Link>
-                      )}
-
-                      {ad.size3 === "M" ? (
-                        <Link
-                          className="options__link "
-                          to={`/shop/${id}/variant=Medium`}
-                        >
-                          <li className="option">M</li>
-                        </Link>
-                      ) : (
-                        <Link
-                          className="options__link "
-                          id="link__dead"
-                          to={`/shop/${id}/variant=Medium`}
-                        >
-                          <img className="diagonal" src={diag} alt="" />
-                          <li className="option">M</li>
-                        </Link>
-                      )}
-                      {ad.size4 === "L" ? (
-                        <Link
-                          className="options__link "
-                          to={`/shop/${id}/variant=Large`}
-                        >
-                          <li className="option">L</li>
-                        </Link>
-                      ) : (
-                        <Link
-                          className="options__link "
-                          id="link__dead"
-                          to={`/shop/${id}/variant=Large`}
-                        >
-                          <img className="diagonal" src={diag} alt="" />
-                          <li className="option">L</li>
-                        </Link>
-                      )}
-
-                      {ad.size5 === "XL" ? (
-                        <Link
-                          className="options__link "
-                          to={`/shop/${id}/variant=ExtraLarge`}
-                        >
-                          <li className="option">XL</li>
-                        </Link>
-                      ) : (
-                        <Link
-                          className="options__link "
-                          id="link__dead"
-                          to={`/shop/${id}/variant=ExtraLarge`}
-                        >
-                          <img className="diagonal" src={diag} alt="" />
-                          <li className="option">XL</li>
-                        </Link>
-                      )}
-
-                      {ad.size6 === "XXL" ? (
-                        <Link
-                          className="options__link"
-                          to={`/shop/${id}/variant=ExtraExtraLarge`}
-                        >
-                          <li className="option">XXL</li>
-                        </Link>
-                      ) : (
-                        <Link
-                          className="options__link"
-                          id="link__dead"
-                          to={`/shop/${id}/variant=ExtraExtraLarge`}
-                        >
-                          <img className="diagonal" src={diag} alt="" />
-                          <li className="option">XXL</li>
-                        </Link>
-                      )}
-                    </ul>
-                  </div>
-                </div>
-              ) : null}
-
+             
               <div className="buy__section">
                 {articleExistsOnCart() ? (
                   <div className="cart__button noPointer">
                     <p className="cart__title">ADDED TO BAG</p>
                   </div>
                 ) : (
-                  <CartButton ad={ad} addArticleToCart={addArticleToCart} />
+                  <CartButtonWhite
+                    ad={ad}
+                    addArticleToCartWhite={addArticleToCartWhite}
+                  />
                 )}
 
                 <div className="buy__info">

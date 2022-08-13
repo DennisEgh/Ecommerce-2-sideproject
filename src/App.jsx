@@ -46,6 +46,9 @@ function App() {
   function addToCartBlack(ad) {
     setCart([...cart, { ...ad, quantity: 1, CHOSEN_COLOR: "BLACK" }]);
   }
+  function addToCartWhite(ad) {
+    setCart([...cart, { ...ad, quantity: 1, CHOSEN_COLOR: "WHITE" }]);
+  }
 
   function incrementQuantity(ad, quantity) {
     setCart(
@@ -111,7 +114,7 @@ function App() {
           <Route
             path="/shop/:id/variant=white"
             element={
-              <ShopSpecificWhite ads={ads} addToCart={addToCart} cart={cart} />
+              <ShopSpecificWhite ads={ads} addToCartWhite={addToCartWhite} cart={cart} />
             }
           />
           <Route

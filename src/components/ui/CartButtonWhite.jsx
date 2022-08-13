@@ -1,10 +1,10 @@
 import React from "react";
 
-const CartButtonBlack = ({ ad, addArticleToCartBlack }) => {
+const CartButtonWhite = ({ ad, addArticleToCartWhite }) => {
   return (
     <>
-      {ad.color === "BLACK" ? (
-        <div onClick={() => addArticleToCartBlack(ad)} className="cart__button">
+      {ad.color2 === "WHITE" ? (
+        <div onClick={() => addArticleToCartWhite(ad)} className="cart__button">
           <p className="cart__title">ADD TO BAG</p>
         </div>
       ) : (
@@ -16,4 +16,4 @@ const CartButtonBlack = ({ ad, addArticleToCartBlack }) => {
   );
 };
 
-export default CartButtonBlack;
+export default CartButtonWhite;

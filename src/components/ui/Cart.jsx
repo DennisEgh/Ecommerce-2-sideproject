@@ -33,7 +33,21 @@ const Cart = ({ cart, incrementQuantity, decrementQuantity, removeItem }) => {
                     <p className="bag__para">{ad.title}</p>
                     {ad.category === "clothes" ? (
                       <p className="bag__size">Size: {ad.CHOSEN_SIZE}</p>
-                    ) : null}
+                    ) : (
+                      <>
+                        {ad.color === "BLACK" ? (
+                          <p className="bag__size">Color: {ad.CHOSEN_COLOR}</p>
+                        ) : (
+                          <>
+                            {ad.color2 === "WHITE" ? (
+                              <p className="bag__size">
+                                Color: {ad.CHOSEN_COLOR}
+                              </p>
+                            ) : null}
+                          </>
+                        )}
+                      </>
+                    )}
                     <Landingcardprice
                       salePrice={ad.salePrice}
                       originalPrice={ad.originalPrice}
