@@ -181,11 +181,11 @@ export const ads = [
     category: "accessories",
     specific: "humidifier",
     description:
-     "Moisturize the dry air in your home or office in minutes. This aesthetically pleasing air-hydrating device adds much-needed moisture to your air, directly combating the negative effects of an overly-dry environment.",
-  color: "BLACK",
-  color2: "WHITE",
-  color3: "PINK",
-    },
+      "Moisturize the dry air in your home or office in minutes. This aesthetically pleasing air-hydrating device adds much-needed moisture to your air, directly combating the negative effects of an overly-dry environment.",
+    color: "BLACK",
+    color2: "WHITE",
+    color3: "PINK",
+  },
   {
     id: 9,
     maker: "H2O",
@@ -203,6 +203,8 @@ export const ads = [
     specific: "humidifier",
     description:
       "Moisturize the dry air in your home or office in minutes. This aesthetically pleasing air-hydrating device adds much-needed moisture to your air, directly combating the negative effects of an overly-dry environment.",
+    color2: "WHITE",
+    color3: "PINK",
   },
   {
     id: 10,
@@ -221,6 +223,7 @@ export const ads = [
     specific: "humidifier",
     description:
       "Moisturize the dry air in your home or office in minutes. This aesthetically pleasing air-hydrating device adds much-needed moisture to your air, directly combating the negative effects of an overly-dry environment.",
+    color2: "WHITE",
   },
   {
     id: 11,
@@ -236,7 +239,7 @@ export const ads = [
     buy_link:
       "https://h2o-humidifiers.com/products/replacement-cotton-filters-10pc",
     category: "accessories",
-    specific: "humidifier",
+    specific: "humidifier-sticks",
   },
   {
     id: 12,

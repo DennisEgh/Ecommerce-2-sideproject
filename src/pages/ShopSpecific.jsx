@@ -4,13 +4,17 @@ import diag from "../assets/diagonal.png";
 import CartButton from "../components/ui/CartButton";
 import Landingcardprice from "../components/ui/Landingcardprice";
 
-const ShopSpecific = ({ ads, addToCart, cart }) => {
+const ShopSpecific = ({ ads, addToCart, cart, addToCartPink }) => {
   const { id } = useParams();
   const ad = ads.find((ad) => +ad.id === +id);
 
   function addArticleToCart(ad) {
     addToCart(ad);
   }
+  function addArticleToCartPink(ad) {
+    addToCartPink(ad);
+  }
+
  
   function articleExistsOnCart() {
     return cart.find((ad) => ad.id === +id);
@@ -46,7 +50,7 @@ const ShopSpecific = ({ ads, addToCart, cart }) => {
                 </div>
                 <p className="article__maker">{ad.maker}</p>
               </div>
-              {ad.id && ad.specific === "humidifier" ? (
+              {ad.id && ad.specific === "humidifier"  ? (
                 <div className="sizes__container">
                   <div className="size__info">
                     <p className="size__title">SELECT SIZE</p>
@@ -199,7 +203,7 @@ const ShopSpecific = ({ ads, addToCart, cart }) => {
                     <p className="cart__title">ADDED TO BAG</p>
                   </div>
                 ) : (
-                  <CartButton ad={ad} addArticleToCart={addArticleToCart} />
+                  <CartButton ad={ad} addArticleToCart={addArticleToCart} addArticleToCartPink={addArticleToCartPink}/>
                 )}
 
                 <div className="buy__info">
