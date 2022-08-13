@@ -1081,7 +1081,10 @@ transition: all 300ms ease;
 }
 @media (max-width: 440px) {
   #checkout {
-    width: 250px;
+    width: 100vw;
+  }
+  .cart__length{
+    margin-left: 40px;
   }
   .bag__total {
     left: 0;
