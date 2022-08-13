@@ -172,7 +172,7 @@ export const ads = [
     url: "https://cdn.shopify.com/s/files/1/0340/4772/1603/products/portable-300-ml-humidifier-usb-ultrasonic_main-0_720x.jpg?v=1641830168",
     url2: "https://cdn.shopify.com/s/files/1/0340/4772/1603/products/portable-300-ml-humidifier-usb-ultrasonic_main-1_720x.jpg?v=1641830168",
     url3: "https://cdn.shopify.com/s/files/1/0340/4772/1603/products/portable-300-ml-humidifier-usb-ultrasonic_main-5_720x.jpg?v=1641830166",
-    originalPrice: 35.0,
+    originalPrice: 40,
     salePrice: null,
     new: false,
     popular: true,
