@@ -1,17 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 import diag from "../assets/diagonal.png";
-import CartButton from "../components/ui/CartButton";
+
+import CartButtonBlack from "../components/ui/CartButtonBlack";
 import Landingcardprice from "../components/ui/Landingcardprice";
 
-const ShopSpecific = ({ ads, addToCart, cart }) => {
+const ShopSpecificBlack = ({ ads, addToCartBlack, cart }) => {
   const { id } = useParams();
   const ad = ads.find((ad) => +ad.id === +id);
 
-  function addArticleToCart(ad) {
-    addToCart(ad);
+  function addArticleToCartBlack(ad) {
+    addToCartBlack(ad);
   }
- 
   function articleExistsOnCart() {
     return cart.find((ad) => ad.id === +id);
   }
@@ -54,13 +54,13 @@ const ShopSpecific = ({ ads, addToCart, cart }) => {
 
                  
                         <Link
-                          className="options__link link__active"
+                          className="options__link "
                           to={`/shop/${id}`}
                         >
                           <li className="option">Pink</li>
                         </Link>
                         <Link
-                          className="options__link"
+                          className="options__link link__active"
                           to={`/shop/${id}/variant=black`}
                         >
                           <li className="option">Black</li>
@@ -199,7 +199,7 @@ const ShopSpecific = ({ ads, addToCart, cart }) => {
                     <p className="cart__title">ADDED TO BAG</p>
                   </div>
                 ) : (
-                  <CartButton ad={ad} addArticleToCart={addArticleToCart} />
+                  <CartButtonBlack ad={ad} addArticleToCartBlack={addArticleToCartBlack} />
                 )}
 
                 <div className="buy__info">
@@ -245,4 +245,4 @@ const ShopSpecific = ({ ads, addToCart, cart }) => {
   );
 };
 
-export default ShopSpecific;
+export default ShopSpecificBlack;

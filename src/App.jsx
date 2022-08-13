@@ -15,12 +15,18 @@ import ShopSpecificM from "./pages/ShopSpecificM";
 import ShopSpecificL from "./pages/ShopSpecificL";
 import ShopSpecificXL from "./pages/ShopSpecificXL";
 import ShopSpecificXXL from "./pages/ShopSpecificXXL";
+import ShopSpecificBlack from "./pages/ShopSpecificBlack";
+import ShopSpecificWhite from "./pages/ShopSpecificWhite";
 
 function App() {
   const [cart, setCart] = useState([]);
 
   function addToCart(ad) {
-    setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "XS" }]);
+    {
+      ad.category === "clothes"
+        ? setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "XS" }])
+        : setCart([...cart, { ...ad, quantity: 1 }]);
+    }
   }
   function addToCartL(ad) {
     setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "L" }]);
@@ -37,14 +43,29 @@ function App() {
   function addToCartXXL(ad) {
     setCart([...cart, { ...ad, quantity: 1, CHOSEN_SIZE: "XXL" }]);
   }
+  function addToCartBlack(ad) {
+    setCart([...cart, { ...ad, quantity: 1, CHOSEN_COLOR: "BLACK" }]);
+  }
 
-  function changeQuantity(ad, quantity) {
+  function incrementQuantity(ad, quantity) {
     setCart(
       cart.map((item) =>
         item.id === ad.id
           ? {
               ...item,
               quantity: +quantity,
+            }
+          : item
+      )
+    );
+  }
+  function decrementQuantity(ad, quantity) {
+    setCart(
+      cart.map((item) =>
+        item.id === ad.id
+          ? {
+              ...item,
+              quantity: --quantity,
             }
           : item
       )
@@ -70,7 +91,8 @@ function App() {
       <div className="App">
         <Nav
           numberOfItems={numberOfItems}
-          changeQuantity={changeQuantity}
+          incrementQuantity={incrementQuantity}
+          decrementQuantity={decrementQuantity}
           removeItem={removeItem}
           cart={cart}
         />
@@ -80,6 +102,18 @@ function App() {
           <Route path="/shop-bras" element={<Shopbras ads={ads} />} />
           <Route path="/shop-leggings" element={<Shopleggings ads={ads} />} />
           <Route path="/shop-shorts" element={<Shopshorts ads={ads} />} />
+          <Route
+            path="/shop/:id/variant=black"
+            element={
+              <ShopSpecificBlack ads={ads} addToCartBlack={addToCartBlack} cart={cart} />
+            }
+          />
+          <Route
+            path="/shop/:id/variant=white"
+            element={
+              <ShopSpecificWhite ads={ads} addToCart={addToCart} cart={cart} />
+            }
+          />
           <Route
             path="/shop-accessories"
             element={<Shopaccessories ads={ads} />}

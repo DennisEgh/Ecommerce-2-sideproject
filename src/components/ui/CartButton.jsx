@@ -1,6 +1,6 @@
 import React from "react";
 
-const CartButton = ({ ad, addArticleToCart }) => {
+const CartButton = ({ ad, addArticleToCart}) => {
   return (
     <>
       {ad.categpry === "clothes" ? (

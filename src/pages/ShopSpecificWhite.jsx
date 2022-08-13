@@ -1,17 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 import diag from "../assets/diagonal.png";
 import CartButton from "../components/ui/CartButton";
 import Landingcardprice from "../components/ui/Landingcardprice";
 
-const ShopSpecific = ({ ads, addToCart, cart }) => {
+const ShopSpecificWhite = ({ ads, addToCart, cart }) => {
   const { id } = useParams();
   const ad = ads.find((ad) => +ad.id === +id);
 
   function addArticleToCart(ad) {
     addToCart(ad);
   }
- 
   function articleExistsOnCart() {
     return cart.find((ad) => ad.id === +id);
   }
@@ -51,28 +50,21 @@ const ShopSpecific = ({ ads, addToCart, cart }) => {
                   <div className="size__info">
                     <p className="size__title">SELECT SIZE</p>
                     <ul className="sizes__options">
-
-                 
-                        <Link
-                          className="options__link link__active"
-                          to={`/shop/${id}`}
-                        >
-                          <li className="option">Pink</li>
-                        </Link>
-                        <Link
-                          className="options__link"
-                          to={`/shop/${id}/variant=black`}
-                        >
-                          <li className="option">Black</li>
-                        </Link>
-                        <Link
-                          className="options__link"
-                          to={`/shop/${id}/variant=white`}
-                        >
-                          <li className="option">White</li>
-                        </Link>
-                    
-                    
+                      <Link className="options__link " to={`/shop/${id}`}>
+                        <li className="option">Pink</li>
+                      </Link>
+                      <Link
+                        className="options__link "
+                        to={`/shop/${id}/variant=black`}
+                      >
+                        <li className="option">Black</li>
+                      </Link>
+                      <Link
+                        className="options__link link__active"
+                        to={`/shop/${id}/variant=white`}
+                      >
+                        <li className="option">White</li>
+                      </Link>
                     </ul>
                   </div>
                 </div>
@@ -245,4 +237,4 @@ const ShopSpecific = ({ ads, addToCart, cart }) => {
   );
 };
 
-export default ShopSpecific;
+export default ShopSpecificWhite;

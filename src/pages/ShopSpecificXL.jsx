@@ -14,7 +14,7 @@ const ShopSpecificXL = ({ ads, cart, addToCartXL }) => {
     addToCartXL(ad);
   }
   function articleExistsOnCart() {
-    return cart.find((ad) => ad.id === +id && ad.CHOSEN_SIZE === "XL");
+    return cart.find((ad) => ad.id === +id);
   }
 
   return (

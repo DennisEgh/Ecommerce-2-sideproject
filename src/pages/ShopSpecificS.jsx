@@ -12,7 +12,7 @@ const ShopSpecificS = ({ ads, cart, addToCartS }) => {
     addToCartS(ad);
   }
   function articleExistsOnCart() {
-    return cart.find((ad) => ad.id === +id && ad.CHOSEN_SIZE === "S");
+    return cart.find((ad) => ad.id === +id);
   }
 
   return (

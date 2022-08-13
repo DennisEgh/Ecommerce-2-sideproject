@@ -12,7 +12,7 @@ const ShopSpecificL = ({ ads, addToCartL, cart }) => {
     addToCartL(ad);
   }
   function articleExistsOnCart() {
-    return cart.find((ad) => ad.id === +id && ad.CHOSEN_SIZE === "L");
+    return cart.find((ad) => ad.id === +id);
   }
 
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Landingcardprice from "./Landingcardprice";
 
-const Cart = ({ cart, changeQuantity, removeItem }) => {
+const Cart = ({ cart, incrementQuantity, decrementQuantity, removeItem }) => {
   const total = () => {
     let price = 0;
     cart.forEach((item) => {
@@ -31,25 +31,57 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                   <div className="bag__info">
                     <h1 className="bag__title">{ad.maker}</h1>
                     <p className="bag__para">{ad.title}</p>
-                    <p className="bag__size">Size: {ad.CHOSEN_SIZE}</p>
+                    {ad.category === "clothes" ? (
+                      <p className="bag__size">Size: {ad.CHOSEN_SIZE}</p>
+                    ) : null}
                     <Landingcardprice
                       salePrice={ad.salePrice}
                       originalPrice={ad.originalPrice}
                     />{" "}
                     <div className="bag__quantity">
-                      <input
-                        type="number"
-                        min={1}
-                        max={3}
-                        className="bag__input"
-                        value={ad.quantity}
-                        onChange={(event) =>
-                          changeQuantity(ad, event.target.value)
-                        }
-                      />
-                    </div>
-                    <div onClick={() => removeItem(ad)} className="bag__remove">
-                      Remove
+                      {ad.quantity <= 1 ? (
+                        <div
+                          className="decrement noPointer"
+                          value={ad.quantity}
+                          onClick={() => decrementQuantity(ad, ad.quantity)}
+                        >
+                          -
+                        </div>
+                      ) : (
+                        <div
+                          className="decrement"
+                          value={ad.quantity}
+                          onClick={() => decrementQuantity(ad, ad.quantity)}
+                        >
+                          -
+                        </div>
+                      )}
+
+                      <div className="counter">{ad.quantity}</div>
+                      {ad.quantity >= 99 ? (
+                        <div
+                          value={ad.quantity}
+                          className="increment noPointer"
+                          onClick={() => incrementQuantity(ad, ++ad.quantity)}
+                        >
+                          +
+                        </div>
+                      ) : (
+                        <div
+                          value={ad.quantity}
+                          className="increment"
+                          onClick={() => incrementQuantity(ad, ++ad.quantity)}
+                        >
+                          +
+                        </div>
+                      )}
+
+                      <div
+                        onClick={() => removeItem(ad)}
+                        className="bag__remove"
+                      >
+                        Remove
+                      </div>
                     </div>
                   </div>
                 </div>
