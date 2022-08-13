@@ -10,7 +10,7 @@ const items = [
         BEST SELLERS
       </h1>
       <p className="item__para">
-        See what all the fuss is about
+        See What All The Fuss Is About.
       </p>
       <Link className="item__button--link" to="/shop">
         <div className="item__button">
@@ -20,7 +20,36 @@ const items = [
     </div>
   </div>,
 
-  <div className="item pic--two" data-value="2"></div>,
+  <div className="item pic--two" data-value="2">
+       <div className="item__content">
+      <h1 className="item__title">
+        MADE TO LAST
+      </h1>
+      <p className="item__para">
+        Tired Of Low Quality? We Got You Covered.
+      </p>
+      <Link className="item__button--link" to="/shop">
+        <div className="item__button">
+          <p className="button__para">SHOP</p>
+        </div>
+      </Link>
+    </div>
+  </div>,
+  <div className="item pic--three" data-value="3">
+       <div className="item__content">
+      <h1 className="item__title">
+        FASTEST DELIVERY MONEY CAN BUY
+      </h1>
+      <p className="item__para">
+        Why Wait 1 Week When You Can Have It Now.
+      </p>
+      <Link className="item__button--link" to="/shop">
+        <div className="item__button">
+          <p className="button__para">SHOP</p>
+        </div>
+      </Link>
+    </div>
+  </div>,
 ];
 
 const Gallery = () => {

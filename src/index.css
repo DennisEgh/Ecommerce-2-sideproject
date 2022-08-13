@@ -184,7 +184,13 @@ header{
 }
 
 .pic--two {
-  background-image: url(https://images.ctfassets.net/8urtyqugdt2l/2ViCafej2NkVXuwLrCglqr/b83a0ed8e8e28559ad89b6735e1d2c4b/_uploads_1513266720-whitney7.jpg);
+  background-image: url(https://wmimg.azureedge.net/public/img/articles/muscle-strain-or-trigger-point-how-to-know-the-difference/title.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.pic--three {
+  background-image: url(https://english.alaraby.co.uk/sites/default/files/media/images/CB7D90E7-0806-42CB-A4C4-E3FE8C813950.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
