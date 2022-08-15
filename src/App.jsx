@@ -9,7 +9,7 @@ import Shopbras from "./pages/ShopBras";
 import Shopleggings from "./pages/ShopLeggings";
 import Shopshorts from "./pages/ShopShorts";
 import Shopaccessories from "./pages/ShopAccessories";
-import Shopfragrances from "./pages/ShopFragrances";
+
 import ShopSpecificS from "./pages/ShopSpecificS";
 import ShopSpecificM from "./pages/ShopSpecificM";
 import ShopSpecificL from "./pages/ShopSpecificL";
@@ -130,10 +130,7 @@ function App() {
             path="/shop-accessories"
             element={<Shopaccessories ads={ads} />}
           />
-          <Route
-            path="/shop-fragrances"
-            element={<Shopfragrances ads={ads} />}
-          />
+        
           <Route
             path="/shop/:id"
             element={

@@ -19,7 +19,7 @@ html {
 
 /* GENERICS */
 .notAllowed{
-  cursor: not-allowed;
+  cursor: not-allowed !important;
   
 }
 .row {
