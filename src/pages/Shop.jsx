@@ -45,7 +45,7 @@ const Shop = ({ ads }) => {
           </div>
           <div className="shop__categories">
             <Link className="categories__link" to="/shop">
-              <h1 className="categories__title">ALL (12)</h1>
+              <h1 className="categories__title">ALL (39)</h1>
             </Link>
             <Link className="categories__link link__inactive" to="/shop-bras">
               <h1 className="categories__title title__inactive">SPORTS BRAS</h1>

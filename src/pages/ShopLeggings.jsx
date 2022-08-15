@@ -47,7 +47,7 @@ const Shopleggings = ({ads}) => {
             <Link className="categories__link link__inactive" to="/shop">
 
             <h1 className="categories__title title__inactive">
-                ALL (12)
+                ALL (39)
             </h1>
             </Link>
             <Link className="categories__link link__inactive" to="/shop-bras">

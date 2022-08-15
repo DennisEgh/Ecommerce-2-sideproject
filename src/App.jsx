@@ -18,6 +18,7 @@ import ShopSpecificXXL from "./pages/ShopSpecificXXL";
 import ShopSpecificBlack from "./pages/ShopSpecificBlack";
 import ShopSpecificWhite from "./pages/ShopSpecificWhite";
 
+
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -180,6 +181,7 @@ function App() {
             }
           />
         </Routes>
+     
       </div>
     </Router>
   );

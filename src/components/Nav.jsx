@@ -30,8 +30,8 @@ const Nav = ({ numberOfItems, cart, incrementQuantity, decrementQuantity, remove
               WOMENS
             </Link>
           </li>
-          <li className="nav__list nav__list--shoes">
-            <Link className="nav__link nav__link--middle" to="/">
+          <li className="nav__list nav__list--shoes notAllowed">
+            <Link className="nav__link nav__link--middle notAllowed" to="/">
               FRAGRANCES
             </Link>
           </li>
@@ -67,7 +67,7 @@ const Nav = ({ numberOfItems, cart, incrementQuantity, decrementQuantity, remove
             </div>
           </li>
           <li className="nav__list">
-            <Link className="nav__link" to="/">
+            <Link className="nav__link notAllowed" to="/">
               ACCOUNT
             </Link>
           </li>

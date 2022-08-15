@@ -5,6 +5,7 @@ const Shopaccessories = ({ ads }) => {
   function toggleFilter() {
     document.querySelector(".filter__menu").classList.toggle("filter__menu--active");
   }
+  
   return (
     <section id="shop">
       <header>
@@ -45,7 +46,7 @@ const Shopaccessories = ({ ads }) => {
           </div>
           <div className="shop__categories">
             <Link className="categories__link link__inactive" to="/shop">
-              <h1 className="categories__title title__inactive">ALL (12)</h1>
+              <h1 className="categories__title title__inactive">ALL (39)</h1>
             </Link>
             <Link className="categories__link link__inactive" to="/shop-bras">
               <h1 className="categories__title title__inactive">SPORTS BRAS</h1>

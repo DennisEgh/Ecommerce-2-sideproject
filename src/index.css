@@ -18,7 +18,10 @@ html {
 
 
 /* GENERICS */
-
+.notAllowed{
+  cursor: not-allowed;
+  
+}
 .row {
   margin: 0 auto;
   margin: 0 auto;
@@ -311,6 +314,49 @@ header{
   font-weight: bold;
   margin-top: 27px;
 }
+
+/*
+EXPLORE
+*/
+#explore{
+  background: #242424;
+  height: 200px;
+  margin-top: 50px;
+}
+.explore__interaction{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+.explore__title{
+  font-weight: 500;
+  font-size: 26px;
+  color: white;
+  margin-bottom: 32px;
+}
+.explore__button{
+  width: 170px;
+  height: 50px;
+ border: white 1px solid;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+ font-weight: 700;
+ transition: all 300ms ease;
+
+}
+.explore__button:hover{
+  border-color: gray;
+  color: gray;
+}
+.explore__button:active{
+  border-color: white;
+  color: white;
+}
+
 
 /*
 CARD
