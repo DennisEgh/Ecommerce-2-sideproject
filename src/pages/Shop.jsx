@@ -36,7 +36,7 @@ const Shop = ({ ads }) => {
             <Link className="categories__link link__inactive" to="/shop-accessories">
               <h1 className="categories__title title__inactive">ACCESSORIES</h1>
             </Link>
-            <Link className="categories__link link__inactive notAllowed" to="/shop-fragrances">
+            <Link className="categories__link link__inactive notAllowed" to="/">
               <h1 className="categories__title title__inactive notAllowed">FRAGRANCES</h1>
             </Link>
             </div>
